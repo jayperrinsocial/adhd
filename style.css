@@ -101,7 +101,7 @@ body{
 .hero p{font-size:1.2rem; margin-bottom:24px}
 .btn{padding:12px 24px; border-radius:30px; font-weight:600; text-decoration:none}
 .btn-primary{background:#fff; color:var(--coral); border:2px solid #fff}
-.btn-secondary{background:transparent; color:#fff; border:2px solid #fff}
+.btn-secondary{background:#A8E6CF; color:#fff; border:2px solid #fff}
 .btn-primary:hover, .btn-secondary:hover{opacity:.9}
 
 /* ===== Features ===== */
