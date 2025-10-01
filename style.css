@@ -75,7 +75,21 @@ body{
   font-weight:500;
 }
 .dropdown-menu li a:hover{background:#f7f7f7; color:var(--coral)}
-.dropdown:hover .dropdown-menu{display:block}
+
+/* Desktop hover effect */
+@media (min-width: 769px) {
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+}
+
+/* Arrow rotation */
+.arrow {
+  transition: transform 0.3s ease;
+}
+.arrow.rotated {
+  transform: rotate(180deg);
+}
 
 /* ===== Hero ===== */
 .hero{
