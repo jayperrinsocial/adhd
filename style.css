@@ -120,6 +120,17 @@ body{
 }
 .feature-card h3{color:var(--coral)}
 
+/* Feature icons */
+.feature-icon {
+  width:80px;
+  height:auto;
+  margin-bottom:15px;
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+
 /* ===== Footer ===== */
 .site-footer{
   background:var(--mint);
