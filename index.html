@@ -1,49 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Mads ADHD</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Header -->
-  <header>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <!-- Centered logo (no title text) -->
     <div class="logo-centered">
-      <a href="index.html">
-        <img src="images/logo.png" alt="Mads ADHD Logo" class="site-logo">
+      <a href="index.html" aria-label="Mads ADHD home">
+        <img src="images/logo.png" alt="Mads ADHD logo" class="site-logo" />
       </a>
     </div>
-    <div class="dropdown">
-      <button class="dropbtn">☰ Menu</button>
-      <div class="dropdown-content">
-        <a href="#">Home</a>
-        <a href="#">Challenges of ADHD</a>
-        <a href="#">Diagnosis and Undiagnosis</a>
-        <a href="#">The Science</a>
-        <a href="#">Workplace & Legal</a>
-        <a href="#">School & Parenting</a>
-        <a href="#">Women & Hormones</a>
-        <a href="#">Strategies & Routines</a>
-        <a href="#">Medication</a>
-        <a href="#">Positives of ADHD</a>
-        <a href="#">Self-Confidence</a>
-        <a href="#">Unmasking & Identity</a>
-        <a href="#">Loved Ones</a>
-      </div>
+
+    <!-- Dropdown menu (prominent, right side) -->
+    <div class="dropdown" aria-label="Main menu">
+      <button class="dropbtn" aria-haspopup="true" aria-expanded="false">
+        <i class="fa-solid fa-bars"></i> Menu
+      </button>
+      <nav class="dropdown-content" role="menu">
+        <a href="living.html" role="menuitem">Living with ADHD</a>
+        <a href="parents.html" role="menuitem">Parents & Families</a>
+        <a href="workplace.html" role="menuitem">Workplace & Career</a>
+        <a href="health.html" role="menuitem">Health & Hormones</a>
+        <a href="medication.html" role="menuitem">Medication & Alternatives</a>
+        <a href="positives.html" role="menuitem">Positives of ADHD</a>
+        <a href="advocacy.html" role="menuitem">Advocacy & Confidence</a>
+        <a href="community.html" role="menuitem">Community & Stories</a>
+        <a href="challenges.html" role="menuitem">Challenges of ADHD</a>
+        <a href="diagnosis.html" role="menuitem">Diagnosis & Undiagnosis</a>
+        <a href="science.html" role="menuitem">The Science</a>
+        <a href="lovedones.html" role="menuitem">Loved Ones</a>
+      </nav>
     </div>
   </header>
 
-  <!-- Hero Section -->
+  <!-- HERO -->
   <section class="hero">
-    <h2>Welcome to Mads ADHD</h2>
-    <p>A UK-based hub for ADHD education, support, and community.</p>
-    <a href="#" class="btn btn-primary">Join the Community</a>
-    <a href="#" class="btn btn-secondary">Learn More</a>
+    <div class="hero-text">
+      <h2>Welcome to Mads ADHD</h2>
+      <p>A UK-based hub for ADHD education, support, and community.</p>
+      <a href="community.html" class="btn btn-primary">Join the Community</a>
+      <a href="resources.html" class="btn btn-secondary">Learn More</a>
+    </div>
   </section>
 
-  <!-- Features -->
+  <!-- FEATURES -->
   <section class="features">
     <div class="feature-card">
       <h3>Guides & Resources</h3>
@@ -59,28 +67,32 @@
     </div>
   </section>
 
-  <!-- Blog -->
+  <!-- BLOG -->
   <section class="blog">
     <h2>Latest from the Blog</h2>
     <article>
-      <h3>Living with ADHD: Daily Challenges</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.</p>
+      <h3>Unmasking ADHD: Learning to Love the Real You</h3>
+      <p>Masking can be exhausting. Here’s how to start the journey of unmasking and embracing authenticity…</p>
+      <a href="#" class="btn btn-outline">Read More</a>
     </article>
     <article>
       <h3>Women, Hormones, and ADHD</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.</p>
+      <p>From puberty to perimenopause, hormones impact ADHD symptoms in unique ways. Let’s break it down…</p>
+      <a href="#" class="btn btn-outline">Read More</a>
     </article>
   </section>
 
-  <!-- Footer -->
-  <footer>
+  <!-- FOOTER -->
+  <footer class="site-footer">
     <div class="social-icons">
-      <a href="#">🌐</a>
-      <a href="#">📘</a>
-      <a href="#">📷</a>
-      <a href="#">🎥</a>
+      <a href="https://www.instagram.com" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://www.tiktok.com" target="_blank" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+      <a href="https://www.youtube.com" target="_blank" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+      <a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://twitter.com" target="_blank" aria-label="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
     </div>
     <p>&copy; 2025 Mads ADHD. All rights reserved.</p>
   </footer>
+
 </body>
 </html>
