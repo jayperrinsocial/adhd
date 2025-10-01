@@ -1,6 +1,6 @@
 :root{
-  --coral:#FF6F61;
-  --mint:#A8E6CF;
+  --coral:#FF6F61; /* used in hero now */
+  --mint:#A8E6CF;  /* used in header + footer */
   --ink:#2C2C2C;
   --paper:#FFFFFF;
   --shadow:0 8px 20px rgba(0,0,0,.08);
@@ -15,11 +15,11 @@ body{
 
 /* ===== Header ===== */
 .site-header{
-  background:var(--coral);
+  background:var(--mint);
   text-align:center;
-  padding:12px 20px;
+  padding:20px;
 }
-.site-logo{height:120px; width:auto}
+.site-logo{height:160px; width:auto} /* bigger logo */
 
 /* ===== Nav Bar ===== */
 .main-nav{
@@ -46,6 +46,7 @@ body{
   padding:10px 0;
   margin:0;
 }
+.nav-links li{list-style:none}
 .nav-links li a{
   text-decoration:none;
   color:var(--ink);
@@ -68,6 +69,7 @@ body{
   padding:10px 0;
   z-index:1000;
 }
+.dropdown-menu li{list-style:none} /* remove bullets */
 .dropdown-menu li a{
   display:block;
   padding:10px 16px;
@@ -84,24 +86,21 @@ body{
 }
 
 /* Arrow rotation */
-.arrow {
-  transition: transform 0.3s ease;
-}
-.arrow.rotated {
-  transform: rotate(180deg);
-}
+.arrow {transition: transform 0.3s ease;}
+.arrow.rotated {transform: rotate(180deg);}
 
 /* ===== Hero ===== */
 .hero{
-  background:var(--mint);
+  background:var(--coral); /* coral instead of mint */
   text-align:center;
-  padding:60px 20px;
+  padding:80px 20px; /* bigger spacing */
 }
-.hero h2{font-size:2.2rem; margin-bottom:10px}
-.hero p{font-size:1.1rem; margin-bottom:20px}
-.btn{padding:10px 20px; border-radius:30px; font-weight:600; text-decoration:none}
-.btn-primary{background:var(--coral); color:#fff}
-.btn-secondary{background:#fff; color:var(--coral); border:2px solid var(--coral)}
+.hero h2{font-size:2.5rem; margin-bottom:12px}
+.hero p{font-size:1.2rem; margin-bottom:24px}
+.btn{padding:12px 24px; border-radius:30px; font-weight:600; text-decoration:none}
+.btn-primary{background:#fff; color:var(--coral); border:2px solid #fff}
+.btn-secondary{background:transparent; color:#fff; border:2px solid #fff}
+.btn-primary:hover, .btn-secondary:hover{opacity:.9}
 
 /* ===== Features ===== */
 .features{
@@ -121,14 +120,15 @@ body{
 
 /* ===== Footer ===== */
 .site-footer{
-  background:var(--coral);
+  background:var(--mint);
   text-align:center;
   padding:20px;
-  color:#fff;
+  color:#000;
 }
 .site-footer .social-icons{margin-bottom:10px}
-.site-footer .social-icons a{color:#fff; margin:0 8px; font-size:1.3rem}
-.site-footer .social-icons a:hover{opacity:.85}
+.site-footer .social-icons a{color:#000; margin:0 8px; font-size:1.3rem}
+.site-footer .social-icons a:hover{opacity:.7}
+.site-footer p{margin:0}
 
 /* ===== Responsive ===== */
 @media (max-width:768px){
