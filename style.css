@@ -24,30 +24,37 @@ header {
 
 .logo-centered {
   position: absolute;
-  top: 10px;
   left: 50%;
   transform: translateX(-50%);
 }
 
-.logo-centered img {
-  max-height: 100px; /* adjust logo size */
+.site-logo {
+  max-height: 140px; /* bigger logo */
   width: auto;
+  display: block;
 }
 
 /* Dropdown Menu */
 .dropdown {
-  position: relative;
-  display: inline-block;
   margin-left: auto;
+  position: relative;
 }
 
 .dropbtn {
-  background-color: #ff6f61; /* coral */
-  color: white;
-  padding: 14px 20px;
-  font-size: 16px;
-  border: none;
+  background-color: white;
+  color: #ff6f61;
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 14px 22px;
+  border: 2px solid #ff6f61;
+  border-radius: 8px;
   cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dropbtn:hover {
+  background-color: #ff6f61;
+  color: white;
 }
 
 .dropdown-content {
@@ -55,9 +62,11 @@ header {
   position: absolute;
   right: 0;
   background-color: #fff;
-  min-width: 220px;
+  min-width: 240px;
   box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
-  z-index: 1;
+  border-radius: 6px;
+  margin-top: 6px;
+  z-index: 1000;
 }
 
 .dropdown-content a {
@@ -65,26 +74,23 @@ header {
   padding: 12px 16px;
   text-decoration: none;
   display: block;
+  font-size: 0.95rem;
 }
 
 .dropdown-content a:hover {
-  background-color: #f1f1f1;
+  background-color: #ffe3e1;
 }
 
 .dropdown:hover .dropdown-content {
   display: block;
 }
 
-.dropdown:hover .dropbtn {
-  background-color: #e65c55; /* darker coral */
-}
-
 /* Hero Section */
 .hero {
-  background-color: #a8e6cf; /* mint */
+  background-color: #ffe3e1; /* lighter coral */
   color: #333;
   text-align: center;
-  padding: 4rem 2rem;
+  padding: 5rem 2rem;
 }
 
 .hero h2 {
@@ -105,20 +111,20 @@ header {
   border-radius: 30px;
   font-weight: bold;
   text-decoration: none;
-  transition: background 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .btn-primary {
-  background-color: #ff6f61;
+  background-color: #243c5a; /* navy for contrast */
   color: #fff;
 }
 
 .btn-primary:hover {
-  background-color: #e65c55;
+  background-color: #1a2a42;
 }
 
 .btn-secondary {
-  background-color: #a8e6cf;
+  background-color: #a8e6cf; /* mint */
   color: #333;
 }
 
@@ -203,12 +209,11 @@ footer p {
     margin-bottom: 1rem;
   }
 
-  .logo-centered img {
-    max-height: 80px;
+  .site-logo {
+    max-height: 100px;
   }
 
-  .features {
-    flex-direction: column;
-    align-items: center;
+  .dropdown {
+    margin: 0 auto;
   }
 }
