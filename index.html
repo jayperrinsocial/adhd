@@ -5,100 +5,62 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mads ADHD</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-  <!-- Header -->
+
+  <!-- HEADER -->
   <header>
-    <div class="logo">
-      <img src="images/logo.png" alt="Mads ADHD Logo">
-      <h1>Mads ADHD</h1>
+    <div class="logo-container">
+      <a href="index.html">
+        <img src="images/logo.png" alt="Mads ADHD Logo" class="site-logo">
+      </a>
     </div>
-    <!-- Hamburger menu (mobile only) -->
-    <div class="hamburger" id="hamburger">
-      <i class="fas fa-bars"></i>
-    </div>
-    <!-- Navigation -->
-    <nav id="nav-menu">
-      <ul>
-        <li><a href="living.html">Living with ADHD</a></li>
-        <li><a href="parents.html">Parents & Families</a></li>
-        <li><a href="workplace.html">Workplace & Career</a></li>
-        <li><a href="health.html">Health & Hormones</a></li>
-        <li><a href="medication.html">Medication & Alternatives</a></li>
-        <li><a href="positives.html">Positives of ADHD</a></li>
-        <li><a href="advocacy.html">Advocacy & Confidence</a></li>
-        <li><a href="community.html">Community & Stories</a></li>
-        <li><a href="challenges.html">Challenges of ADHD</a></li>
-        <li><a href="diagnosis.html">Diagnosis & Undiagnosis</a></li>
-        <li><a href="science.html">The Science</a></li>
-        <li><a href="lovedones.html">Loved Ones</a></li>
+
+    <!-- NAVIGATION -->
+    <nav class="main-nav">
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Challenges of ADHD</a></li>
+        <li><a href="#">Diagnosis & Undiagnosis</a></li>
+        <li><a href="#">The Science</a></li>
+        <li><a href="#">Living with ADHD</a></li>
+        <li><a href="#">Workplace & Careers</a></li>
+        <li><a href="#">Women & Hormones</a></li>
+        <li><a href="#">Children & Parenting</a></li>
+        <li><a href="#">Loved Ones</a></li>
+        <li><a href="#">Medication</a></li>
+        <li><a href="#">Positives of ADHD</a></li>
+        <li><a href="#">Strategies & Support</a></li>
+        <li><a href="#">Advocacy & Rights</a></li>
       </ul>
+      <button class="nav-toggle" aria-label="toggle menu">☰</button>
     </nav>
   </header>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero-text">
-      <h2>Welcome to Mads ADHD</h2>
-      <p>A supportive community and resource hub for women, families, and anyone navigating ADHD in the UK.</p>
-      <a href="resources.html" class="btn btn-primary">Explore Resources</a>
-      <a href="community.html" class="btn btn-secondary">Join the Community</a>
-    </div>
-  </section>
+  <!-- MAIN CONTENT -->
+  <main>
+    <section class="hero">
+      <h1>Welcome to Mads ADHD</h1>
+      <p>Your UK-based ADHD support and education hub. Real experiences, real advice, and real community.</p>
+    </section>
 
-  <!-- Featured Sections -->
-  <section class="features">
-    <div class="feature-card">
-      <h3>Diagnosis & Undiagnosis</h3>
-      <p>Understand the NHS process, Right to Choose, private routes, and costs.</p>
-      <a href="diagnosis.html" class="btn btn-secondary">Learn More</a>
-    </div>
-    <div class="feature-card">
-      <h3>Living with ADHD</h3>
-      <p>Everyday strategies, routines, and real experiences from women with ADHD.</p>
-      <a href="living.html" class="btn btn-secondary">Read More</a>
-    </div>
-    <div class="feature-card">
-      <h3>Parents & Families</h3>
-      <p>Guidance for supporting children with ADHD at home and in school.</p>
-      <a href="parents.html" class="btn btn-secondary">Discover</a>
-    </div>
-  </section>
+    <section class="content">
+      <h2>About</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. This will be where your story or introduction goes.</p>
+    </section>
+  </main>
 
-  <!-- Blog/Updates Section -->
-  <section class="blog">
-    <h2>From the Blog</h2>
-    <article>
-      <h3>Unmasking ADHD: Learning to Love the Real You</h3>
-      <p>Masking can be exhausting. Here’s how to start the journey of unmasking and embracing authenticity...</p>
-      <a href="#" class="btn btn-primary">Read More</a>
-    </article>
-    <article>
-      <h3>ADHD & Hormones: What Women Need to Know</h3>
-      <p>From puberty to perimenopause, hormones impact ADHD symptoms in unique ways. Let’s break it down...</p>
-      <a href="#" class="btn btn-primary">Read More</a>
-    </article>
-  </section>
-
-  <!-- Footer -->
+  <!-- FOOTER -->
   <footer>
-    <div class="social-icons">
-      <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
-      <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
-      <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-      <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
-    </div>
     <p>&copy; 2025 Mads ADHD. All rights reserved.</p>
   </footer>
 
-  <!-- JS for Hamburger -->
   <script>
-    const hamburger = document.getElementById("hamburger");
-    const navMenu = document.getElementById("nav-menu");
-
-    hamburger.addEventListener("click", () => {
-      navMenu.classList.toggle("active");
+    // Toggle menu for mobile
+    const toggle = document.querySelector('.nav-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    toggle.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
     });
   </script>
 </body>
