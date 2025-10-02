@@ -150,6 +150,24 @@ body{
 .site-footer .social-icons a:hover{opacity:.7}
 .site-footer p{margin:0}
 
+/* Footer links */
+.footer-links {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: #000;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.footer-links a:hover {
+  color: var(--coral);
+  text-decoration: underline;
+}
+
+
 /* ===== Responsive ===== */
 @media (max-width:768px){
   .main-nav{justify-content:center; padding:10px 0}
