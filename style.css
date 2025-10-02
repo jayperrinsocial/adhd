@@ -92,11 +92,17 @@ body{
 .arrow.rotated {transform: rotate(180deg);}
 
 /* ===== Hero ===== */
-.hero{
-  background:var(--coral); /* coral instead of mint */
-  text-align:center;
-  padding:40px 20px; /* bigger spacing */
+/* ===== Hero ===== */
+.hero {
+  background: var(--coral); /* ❌ remove this */
+  background-image: url("images/hero-bg.png"); /* ✅ new image */
+  background-size: cover;      /* make sure it fills the section */
+  background-position: center; /* keep it centered */
+  text-align: center;
+  padding: 80px 20px; /* a bit taller spacing */
+  color: #fff; /* ensure text shows up over the bg */
 }
+
 .hero h2{font-size:2.5rem; margin-bottom:12px}
 .hero p{font-size:1.2rem; margin-bottom:24px}
 .btn{padding:12px 24px; border-radius:30px; font-weight:600; text-decoration:none}
