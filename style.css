@@ -166,25 +166,50 @@ body{
 
 /* ===== Responsive ===== */
 @media (max-width:768px){
-  .nav-links{
-    display:none;
-    flex-direction:column;
-    gap:12px;
-    width:100%;
-    padding:20px 0;
+  .main-nav {
+    justify-content: center;   /* center contents */
+    padding: 10px 0;
   }
-  .nav-links.active{display:flex; background:#fff}
-  .main-nav{justify-content:space-between}
-  .main-nav .nav-toggle{display:block}
-  .dropdown-menu{
-    position:static;
-    transform:none; /* reset centering on mobile */
-    box-shadow:none;
-    border-radius:0;
-    min-width:auto;
-    padding:0;
-    display:none;
-    flex-direction:column;
+
+  /* Hide all nav links including "Information and Support" */
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+    width: 100%;
+    padding: 20px 0;
   }
-  .dropdown-menu.active{display:flex}
+
+  .nav-links.active {
+    display: flex;
+    background: #fff;
+  }
+
+  /* Show hamburger in center */
+  .main-nav .nav-toggle {
+    display: block;
+    margin: 0 auto;
+    font-size: 2rem;
+  }
+
+  /* Dropdown menu styling */
+  .dropdown-menu {
+    position: static;
+    transform: none;
+    box-shadow: none;
+    border-radius: 0;
+    min-width: auto;
+    padding: 0;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .dropdown-menu.active {
+    display: flex;
+  }
 }
+
