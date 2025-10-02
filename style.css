@@ -93,20 +93,48 @@ body{
 
 /* ===== Hero ===== */
 .hero {
-  background-image: url("images/hero-bg.png"); /* ✅ custom bg with yellow string */
+  background: var(--coral); /* fallback colour */
+  background-image: url("images/hero-bg.png"); /* ✅ custom background */
   background-size: cover;
-  background-position: top center;  /* ✅ push image up */
+  background-position: top center; /* ✅ push string up */
   text-align: center;
-  padding: 40px 20px 60px; /* ✅ less top gap, keep bottom roomyy */
+  padding: 50px 20px; /* ✅ reduced gap */
   color: #fff;
 }
 
-.hero h2{font-size:2.5rem; margin-bottom:12px}
-.hero p{font-size:1.2rem; margin-bottom:24px}
-.btn{padding:12px 24px; border-radius:30px; font-weight:600; text-decoration:none}
-.btn-primary{background:#fff; color:var(--coral); border:2px solid #fff}
-.btn-secondary{background:#A8E6CF; color:#fff; border:2px solid #fff}
-.btn-primary:hover, .btn-secondary:hover{opacity:.9}
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 12px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.btn {
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background: #fff;
+  color: var(--coral);
+  border: 2px solid #fff;
+}
+
+.btn-secondary {
+  background: var(--mint);
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+.btn-primary:hover,
+.btn-secondary:hover {
+  opacity: .9;
+}
 
 /* ===== Features ===== */
 .features {
@@ -184,7 +212,7 @@ body{
     gap: 16px;
     width: 100%;
     padding: 20px 0;
-    background: #fff;   /* ✅ back to white background on mobile */
+    background: #fff;   /* ✅ white on mobile */
     border-top: 2px solid #eee;
     border-bottom: 2px solid #eee;
   }
@@ -213,7 +241,7 @@ body{
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background: #fff;  /* ✅ white background */
+    background: #fff;
   }
 
   .dropdown-menu.active {
