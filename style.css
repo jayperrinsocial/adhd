@@ -92,15 +92,13 @@ body{
 .arrow.rotated {transform: rotate(180deg);}
 
 /* ===== Hero ===== */
-/* ===== Hero ===== */
 .hero {
-  background: var(--coral); /* ❌ remove this */
-  background-image: url("images/hero-bg.png"); /* ✅ new image */
-  background-size: cover;      /* make sure it fills the section */
-  background-position: center; /* keep it centered */
+  background-image: url("images/hero-bg.png"); /* ✅ custom bg with yellow string */
+  background-size: cover;
+  background-position: top center;  /* ✅ push image up */
   text-align: center;
-  padding: 80px 20px; /* a bit taller spacing */
-  color: #fff; /* ensure text shows up over the bg */
+  padding: 40px 20px 60px; /* ✅ less top gap, keep bottom roomy */
+  color: #fff;
 }
 
 .hero h2{font-size:2.5rem; margin-bottom:12px}
@@ -155,8 +153,6 @@ body{
   margin-right: auto;
 }
 
-
-
 /* ===== Footer ===== */
 .site-footer{
   background:var(--mint);
@@ -168,11 +164,10 @@ body{
 .site-footer .social-icons a{
   color:#000; 
   margin:0 12px; 
-  font-size:2.6rem; /* doubled from 1.3rem */
+  font-size:2.6rem; /* doubled size */
 }
 .site-footer .social-icons a:hover{opacity:.7}
 .site-footer p{margin:0}
-
 
 /* ===== Responsive ===== */
 @media (max-width:768px){
@@ -181,7 +176,6 @@ body{
     padding: 10px 0;
   }
 
-  /* Hide all nav links including "Information and Support" */
   .nav-links {
     display: none;
     flex-direction: column;
@@ -199,7 +193,6 @@ body{
     display: flex;
   }
 
-  /* Show hamburger in center */
   .main-nav .nav-toggle {
     display: block;
     margin: 0 auto;
@@ -209,7 +202,6 @@ body{
     border: none;
   }
 
-  /* Dropdown menu styling */
   .dropdown-menu {
     position: static;
     transform: none;
@@ -221,14 +213,13 @@ body{
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background: #fff;  /* ✅ also white here */
+    background: #fff;  /* ✅ white background */
   }
 
   .dropdown-menu.active {
     display: flex;
   }
 
-  /* Ensure links are bold and visible */
   .nav-links li a {
     font-size: 1.1rem;
     font-weight: 600;
