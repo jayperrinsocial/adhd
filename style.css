@@ -180,7 +180,7 @@ body{
     gap: 16px;
     width: 100%;
     padding: 20px 0;
-    background: var(--mint);   /* ✅ mint background for mobile dropdown */
+    background: #fff;   /* ✅ back to white background on mobile */
     border-top: 2px solid #eee;
     border-bottom: 2px solid #eee;
   }
@@ -211,7 +211,7 @@ body{
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background: var(--mint);  /* ✅ match dropdown with nav background */
+    background: #fff;  /* ✅ also white here */
   }
 
   .dropdown-menu.active {
