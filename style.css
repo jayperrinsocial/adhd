@@ -180,11 +180,13 @@ body{
     gap: 16px;
     width: 100%;
     padding: 20px 0;
+    background: var(--mint);   /* ✅ mint background for mobile dropdown */
+    border-top: 2px solid #eee;
+    border-bottom: 2px solid #eee;
   }
 
   .nav-links.active {
     display: flex;
-    background: #fff;
   }
 
   /* Show hamburger in center */
@@ -192,6 +194,9 @@ body{
     display: block;
     margin: 0 auto;
     font-size: 2rem;
+    color: var(--ink);
+    background: none;
+    border: none;
   }
 
   /* Dropdown menu styling */
@@ -206,10 +211,20 @@ body{
     flex-direction: column;
     align-items: center;
     text-align: center;
+    background: var(--mint);  /* ✅ match dropdown with nav background */
   }
 
   .dropdown-menu.active {
     display: flex;
   }
-}
 
+  /* Ensure links are bold and visible */
+  .nav-links li a {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--ink);
+  }
+  .nav-links li a:hover {
+    color: var(--coral);
+  }
+}
