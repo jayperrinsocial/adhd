@@ -1,4 +1,4 @@
-:root{
+:root {
   --coral:#FF6F61; /* used in hero now */
   --mint:#A8E6CF;  /* used in header + footer */
   --ink:#2C2C2C;
@@ -6,23 +6,23 @@
   --shadow:0 8px 20px rgba(0,0,0,.08);
 }
 
-*{box-sizing:border-box}
-body{
+* { box-sizing:border-box }
+body {
   font-family:'Poppins',sans-serif;
   margin:0; line-height:1.6;
   background:var(--paper); color:var(--ink);
 }
 
 /* ===== Header ===== */
-.site-header{
+.site-header {
   background:var(--mint);
   text-align:center;
   padding:20px;
 }
-.site-logo{height:160px; width:auto}
+.site-logo {height:160px; width:auto}
 
 /* ===== Nav Bar ===== */
-.main-nav{
+.main-nav {
   background:#fff;
   border-top:1px solid #eee;
   border-bottom:1px solid #eee;
@@ -32,32 +32,32 @@ body{
   padding:0 20px;
   position:relative;
 }
-.main-nav .nav-toggle{
+.main-nav .nav-toggle {
   display:none;
   background:none;
   border:none;
   font-size:1.6rem;
   cursor:pointer;
 }
-.nav-links{
+.nav-links {
   list-style:none;
   display:flex;
   gap:24px;
   padding:10px 0;
   margin:0;
 }
-.nav-links li{list-style:none}
-.nav-links li a{
+.nav-links li {list-style:none}
+.nav-links li a {
   text-decoration:none;
   color:var(--ink);
   font-weight:600;
   padding:8px 6px;
 }
-.nav-links li a:hover{color:var(--coral)}
+.nav-links li a:hover {color:var(--coral)}
 
 /* Dropdown inside nav */
-.dropdown{position:relative; text-align:center}
-.dropdown-menu{
+.dropdown {position:relative; text-align:center}
+.dropdown-menu {
   display:none;
   position:absolute;
   top:100%;
@@ -71,14 +71,14 @@ body{
   z-index:1000;
   text-align:left;
 }
-.dropdown-menu li{list-style:none}
-.dropdown-menu li a{
+.dropdown-menu li {list-style:none}
+.dropdown-menu li a {
   display:block;
   padding:10px 16px;
   color:var(--ink);
   font-weight:500;
 }
-.dropdown-menu li a:hover{background:#f7f7f7; color:var(--coral)}
+.dropdown-menu li a:hover {background:#f7f7f7; color:var(--coral)}
 
 /* Desktop hover effect */
 @media (min-width: 769px) {
@@ -90,8 +90,8 @@ body{
 .arrow.rotated {transform: rotate(180deg);}
 
 /* ===== Hero ===== */
-.hero{
-  background-color: var(--coral);
+.hero {
+  background-color: var(--coral);            
   background-image: url("images/hero-bg.png") !important;
   background-size: cover;
   background-position: center top;
@@ -101,25 +101,26 @@ body{
   color:#fff;
   min-height: 280px;
 }
-.hero h2{font-size:2.5rem; margin-bottom:12px}
-.hero p{
-  font-size:1.2rem;
-  margin-bottom:20px;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.3); /* add subtle shadow for readability */
+.hero h2 {font-size:2.5rem; margin-bottom:12px}
+.hero p {font-size:1.2rem; margin-bottom:20px; text-shadow:1px 1px 4px rgba(0,0,0,0.3);}
+.btn {
+  padding:12px 24px;
+  border-radius:30px;
+  font-weight:600;
+  text-decoration:none;
 }
-.btn{padding:12px 24px; border-radius:30px; font-weight:600; text-decoration:none}
-.btn-primary{background:#fff; color:var(--coral); border:2px solid #fff}
-.btn-secondary{background:var(--mint); color:#fff; border:2px solid #fff}
-.btn-primary:hover,.btn-secondary:hover{opacity:.9}
+.btn-primary {background:#fff; color:var(--coral); border:2px solid #fff}
+.btn-secondary {background:var(--mint); color:#fff; border:2px solid #fff}
+.btn-primary:hover,.btn-secondary:hover {opacity:.9}
 
 /* ===== Features ===== */
-.features{
+.features {
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
   gap:20px;
   padding:40px 20px;
 }
-.feature-card{
+.feature-card {
   background:#fff;
   padding:20px;
   border-radius:12px;
@@ -130,140 +131,123 @@ body{
   transition:transform .2s ease, box-shadow .2s ease;
   display:block;
 }
-.feature-card h3{color:var(--coral); margin-top:10px}
-.feature-card p{color:var(--ink)}
-.feature-card:hover{
+.feature-card h3 {color:var(--coral); margin-top:10px}
+.feature-card p {color:var(--ink)}
+.feature-card:hover {
   transform:translateY(-6px) scale(1.02);
   box-shadow:0 12px 24px rgba(0,0,0,.15);
   cursor:pointer;
 }
-.feature-icon{
+.feature-icon {
   width:120px; height:auto; margin:0 auto 15px auto; display:block;
 }
 
-/* ===== Subscribe Section ===== */
-.subscribe-section {
+/* ===== Newsletter Section ===== */
+.newsletter {
   background: var(--coral);
-  text-align: center;
-  padding: 50px 20px;
   color: #fff;
+  text-align: center;
+  padding: 40px 20px;
 }
-.subscribe-section h2 {
-  font-size: 2rem;
-  margin-bottom: 10px;
+.newsletter h2 {
+  margin: 0 0 15px;
+  font-size: 1.8rem;
 }
-.subscribe-section p {
-  font-size: 1.1rem;
+.newsletter p {
   margin-bottom: 20px;
+  font-size: 1rem;
 }
-.subscribe-form {
+.newsletter form {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 12px;
-  max-width: 700px;
+  gap: 10px;
+  max-width: 600px;
   margin: 0 auto;
 }
-.subscribe-form input {
-  padding: 12px 16px;
-  border-radius: 8px;
+.newsletter input {
+  padding: 10px 14px;
   border: none;
+  border-radius: 8px;
   font-family: 'Poppins', sans-serif;
-  flex: 1;
-  min-width: 160px;
+  font-size: 1rem;
+  flex: 1 1 150px;
 }
-.subscribe-form button {
+.newsletter button {
+  padding: 12px 24px;
   background: #fff;
   color: var(--coral);
-  border: none;
-  border-radius: 8px;
-  padding: 12px 20px;
+  border: 2px solid #fff;
+  border-radius: 30px;
   font-weight: 600;
-  cursor: pointer;
   font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
 }
-.subscribe-form button:hover {opacity: 0.9;}
+.newsletter button:hover {opacity: 0.9;}
 
-/* ===== Media + News Section ===== */
+/* ===== Video + News Section ===== */
 .media-news {
-  background: #fff;
-  padding: 60px 20px;
-}
-.media-news-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px;
-  max-width: 1200px;
-  margin: 0 auto;
-  align-items: start;
+  padding: 50px 20px;
+  background: #fff;
 }
-.featured-video h2,
-.recent-news-side h2 {
-  font-size: 1.8rem;
-  margin-bottom: 16px;
+.media-news h2 {
+  margin-bottom: 15px;
+  font-size: 1.6rem;
   color: var(--ink);
 }
-.video-container {
-  position: relative;
+.media-news iframe {
   width: 100%;
-  padding-bottom: 56.25%;
-  height: 0;
-  overflow: hidden;
+  aspect-ratio: 16/9;
   border-radius: 12px;
   box-shadow: var(--shadow);
 }
-.video-container iframe {
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  border: 0; border-radius: 12px;
+.news-entry {
+  margin-bottom: 20px;
 }
-.news-item {margin-bottom: 24px;}
-.news-date {
-  font-size: 0.9rem;
-  color: #666;
-  margin-bottom: 6px;
-}
-.news-item h4 a {
-  font-size: 1.2rem;
+.news-entry h3 {
+  margin: 5px 0;
   color: var(--coral);
-  text-decoration: none;
-  font-weight: 600;
 }
-.news-item h4 a:hover {text-decoration: underline;}
-.news-item p {
-  margin-top: 6px;
+.news-entry p {
+  margin: 0;
   color: var(--ink);
-  font-size: 1rem;
 }
-.news-button {margin-top: 20px;}
-.btn-coral {
+.read-more-news {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
   background: var(--coral);
   color: #fff;
-  padding: 12px 28px;
   border-radius: 30px;
   font-weight: 600;
   text-decoration: none;
-  display: inline-block;
+  transition: opacity 0.2s ease;
 }
-.btn-coral:hover {opacity: 0.9;}
+.read-more-news:hover {opacity: 0.9;}
 
 /* ===== Footer ===== */
-.site-footer{
+.site-footer {
   background:var(--mint);
   text-align:center;
   padding:20px;
   color:#000;
 }
-.site-footer .social-icons{margin-bottom:10px}
-.site-footer .social-icons a{color:#000; margin:0 12px; font-size:2.6rem}
-.site-footer .social-icons a:hover{opacity:.7}
-.site-footer p{margin:0}
+.site-footer .social-icons {margin-bottom:10px}
+.site-footer .social-icons a {
+  color:#000;
+  margin:0 12px;
+  font-size:2.6rem;
+}
+.site-footer .social-icons a:hover {opacity:.7}
+.site-footer p {margin:0}
 
 /* Footer links */
-.footer-links {
-  margin-bottom: 10px;
-}
+.footer-links {margin-bottom: 10px;}
 .footer-links a {
   color: #000;
   text-decoration: none;
@@ -277,8 +261,8 @@ body{
 
 /* ===== Responsive ===== */
 @media (max-width:768px){
-  .main-nav{justify-content:center; padding:10px 0}
-  .nav-links{
+  .main-nav {justify-content:center; padding:10px 0}
+  .nav-links {
     display:none;
     flex-direction:column;
     align-items:center;
@@ -291,8 +275,11 @@ body{
     border-bottom:2px solid #eee;
   }
   .nav-links.active{display:flex}
-  .main-nav .nav-toggle{display:block; margin:0 auto; font-size:2rem; color:var(--ink)}
-  .dropdown-menu{
+  .main-nav .nav-toggle {
+    display:block; margin:0 auto;
+    font-size:2rem; color:var(--ink)
+  }
+  .dropdown-menu {
     position:static;
     transform:none;
     box-shadow:none;
@@ -309,7 +296,6 @@ body{
   .nav-links li a{font-size:1.1rem; font-weight:600; color:var(--ink)}
   .nav-links li a:hover{color:var(--coral)}
 
-  /* Stack media/news */
-  .media-news-grid {grid-template-columns: 1fr;}
-  .featured-video, .recent-news-side {text-align: center;}
+  .newsletter form {flex-direction:column;}
+  .media-news {grid-template-columns:1fr;}
 }
