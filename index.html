@@ -78,28 +78,31 @@
     </a>
   </section>
 
-  <!-- NEWSLETTER SIGNUP -->
+  <!-- NEWSLETTER -->
   <section class="newsletter">
-    <h2>Subscribe to our Newsletter</h2>
-    <p>Get the latest ADHD resources, community stories, and updates straight to your inbox.</p>
+    <h2>Stay in the Loop</h2>
+    <p>Subscribe to our newsletter for ADHD updates, resources, and community stories.</p>
     <form class="newsletter-form">
-      <input type="text" name="first-name" placeholder="First name" required>
-      <input type="text" name="last-name" placeholder="Last name" required>
-      <input type="email" name="email" placeholder="Email address" required>
-      <button type="submit" class="btn btn-primary">Sign Up</button>
+      <input type="text" placeholder="First name" required>
+      <input type="text" placeholder="Last name" required>
+      <input type="email" placeholder="Email address" required>
+      <button type="submit" class="btn btn-primary">Sign up</button>
     </form>
+    <div class="newsletter-success">
+      🎉 Thanks for signing up! Please check your inbox to confirm your subscription.
+    </div>
   </section>
 
   <!-- FOOTER -->
   <footer class="site-footer">
+    <div class="footer-links">
+      <a href="privacy.html">Privacy Policy</a> | 
+      <a href="disclaimer.html">Disclaimer</a>
+    </div>
     <div class="social-icons">
       <a href="#"><i class="fa-brands fa-instagram"></i></a>
       <a href="#"><i class="fa-brands fa-tiktok"></i></a>
       <a href="#"><i class="fa-brands fa-youtube"></i></a>
-    </div>
-    <div class="footer-links">
-      <a href="privacy.html">Privacy Policy</a> | 
-      <a href="disclaimer.html">Disclaimer</a>
     </div>
     <p>&copy; 2025 Mads ADHD. All rights reserved.</p>
   </footer>
@@ -120,6 +123,13 @@
           this.querySelector(".arrow").classList.toggle("rotated");
         }
       });
+    });
+
+    // Newsletter success message
+    document.querySelector(".newsletter-form").addEventListener("submit", function(e){
+      e.preventDefault();
+      document.querySelector(".newsletter-success").classList.add("active");
+      this.reset();
     });
   </script>
 </body>
