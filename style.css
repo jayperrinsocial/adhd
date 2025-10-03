@@ -1,6 +1,6 @@
 :root{
-  --coral:#FF6F61; /* used in hero now */
-  --mint:#A8E6CF;  /* used in header + footer */
+  --coral:#FF6F61;
+  --mint:#A8E6CF;
   --ink:#2C2C2C;
   --paper:#FFFFFF;
   --shadow:0 8px 20px rgba(0,0,0,.08);
@@ -55,7 +55,6 @@ body{
 }
 .nav-links li a:hover{color:var(--coral)}
 
-/* Dropdown inside nav */
 .dropdown{position:relative; text-align:center}
 .dropdown-menu{
   display:none;
@@ -71,7 +70,6 @@ body{
   z-index:1000;
   text-align:left;
 }
-.dropdown-menu li{list-style:none}
 .dropdown-menu li a{
   display:block;
   padding:10px 16px;
@@ -80,12 +78,9 @@ body{
 }
 .dropdown-menu li a:hover{background:#f7f7f7; color:var(--coral)}
 
-/* Desktop hover effect */
 @media (min-width: 769px) {
   .dropdown:hover .dropdown-menu { display:block; }
 }
-
-/* Arrow rotation */
 .arrow {transition: transform 0.3s ease;}
 .arrow.rotated {transform: rotate(180deg);}
 
@@ -101,15 +96,11 @@ body{
   color:#fff;
   min-height: 280px;
 }
-.hero h2{
-  font-size:2.5rem;
-  margin-bottom:12px;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.45); /* stronger shadow for heading */
-}
+.hero h2{font-size:2.5rem; margin-bottom:12px}
 .hero p{
   font-size:1.2rem;
   margin-bottom:20px;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);  /* softer shadow for paragraph */
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.4); /* ✅ makes white text pop */
 }
 .btn{padding:12px 24px; border-radius:30px; font-weight:600; text-decoration:none}
 .btn-primary{background:#fff; color:var(--coral); border:2px solid #fff}
@@ -141,8 +132,72 @@ body{
   box-shadow:0 12px 24px rgba(0,0,0,.15);
   cursor:pointer;
 }
-.feature-icon{
-  width:120px; height:auto; margin:0 auto 15px auto; display:block;
+.feature-icon{width:120px; height:auto; margin:0 auto 15px auto; display:block;}
+
+/* ===== Newsletter ===== */
+.newsletter {
+  background: var(--mint);
+  text-align: center;
+  padding: 50px 20px;
+  border-top: 2px solid #eee;
+  border-bottom: 2px solid #eee;
+}
+.newsletter h2 {
+  font-size: 2rem;
+  margin-bottom: 12px;
+  color: var(--ink);
+}
+.newsletter p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  color: var(--ink);
+}
+.newsletter-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.newsletter-form input {
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  flex: 1;
+  min-width: 150px;
+  font-size: 1rem;
+}
+.newsletter-form button {
+  padding: 12px 24px;
+  border-radius: 6px;
+  background: var(--coral);
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.newsletter-form button:hover {
+  background: #e85d55;
+}
+
+/* Newsletter Success Message */
+.newsletter-success {
+  display: none;
+  margin-top: 20px;
+  padding: 15px 20px;
+  background: #fff;
+  border-left: 6px solid var(--coral);
+  border-radius: 6px;
+  font-size: 1rem;
+  color: var(--ink);
+  box-shadow: var(--shadow);
+  animation: fadeIn 0.5s ease-in-out;
+}
+.newsletter-success.active { display: block; }
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 /* ===== Footer ===== */
@@ -157,20 +212,13 @@ body{
 .site-footer .social-icons a:hover{opacity:.7}
 .site-footer p{margin:0}
 
-/* Footer links */
 .footer-links {
   margin-bottom: 10px;
 }
 .footer-links a {
-  color: #000;
-  text-decoration: none;
-  font-size: 0.95rem;
-  font-weight: 500;
+  color:#000; text-decoration:none; font-size:0.95rem; font-weight:500;
 }
-.footer-links a:hover {
-  color: var(--coral);
-  text-decoration: underline;
-}
+.footer-links a:hover { color:var(--coral); text-decoration:underline; }
 
 /* ===== Responsive ===== */
 @media (max-width:768px){
