@@ -232,58 +232,114 @@ body{
 /* ===== Recent News ===== */
 .recent-news {
   background: var(--paper);
-  padding: 50px 20px;
-  text-align: center;
+  padding: 60px 20px;
 }
 
 .recent-news h2 {
   font-size: 2rem;
   font-weight: 700;
   color: var(--ink);
+  text-align: left;
   margin-bottom: 30px;
 }
 
-.news-grid {
+.news-layout {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;
 }
 
-.news-card {
-  background: #fff;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: var(--shadow);
-  text-align: left;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.news-card h3 {
-  font-size: 1.2rem;
-  margin-bottom: 10px;
-}
-
-.news-card h3 a {
+.news-feature h3 a {
+  font-size: 1.3rem;
+  font-weight: 600;
   text-decoration: none;
   color: var(--coral);
-  font-weight: 600;
 }
 
-.news-card p {
+.news-feature p {
+  font-size: 1rem;
   color: var(--ink);
-  font-size: 0.95rem;
+  margin: 10px 0;
+}
+
+.news-feature .news-date {
+  display: block;
+  font-size: 0.9rem;
+  color: #666;
   margin-bottom: 15px;
 }
 
-.news-date {
-  font-size: 0.8rem;
-  color: #666;
+.news-image {
+  width: 120px;
+  margin-top: 20px;
 }
 
-.news-card:hover {
-  transform: translateY(-6px) scale(1.02);
-  box-shadow: 0 12px 24px rgba(0,0,0,0.15);
-  cursor: pointer;
+.news-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.news-item .news-date {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.news-item h4 a {
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--coral);
+}
+
+.news-item p {
+  font-size: 0.95rem;
+  color: var(--ink);
+}
+
+.news-button {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.news-button .btn {
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* ===== Responsive for Recent News ===== */
+@media (max-width: 768px) {
+  .news-layout {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .recent-news h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .news-feature,
+  .news-list {
+    text-align: center;
+  }
+
+  .news-image {
+    margin: 20px auto 0 auto;
+  }
+
+  .news-item h4 a {
+    font-size: 1rem;
+  }
+
+  .news-item p {
+    font-size: 0.9rem;
+  }
 }
 
 
