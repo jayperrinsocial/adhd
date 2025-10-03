@@ -78,56 +78,57 @@
     </a>
   </section>
 
-  <!-- NEWSLETTER -->
-  <section class="newsletter">
+  <!-- SUBSCRIBE -->
+  <section class="subscribe-section">
     <h2>Stay in the Loop</h2>
     <p>Subscribe to our newsletter for ADHD updates, resources, and community stories.</p>
-    <form class="newsletter-form">
+    <form class="subscribe-form">
       <input type="text" placeholder="First name" required>
       <input type="text" placeholder="Last name" required>
       <input type="email" placeholder="Email address" required>
-      <button type="submit" class="btn btn-primary">Sign up</button>
+      <button type="submit">Sign up</button>
     </form>
-    <div class="newsletter-success">
-      🎉 Thanks for signing up! Please check your inbox to confirm your subscription.
-    </div>
   </section>
 
-    <!-- RECENT NEWS -->
-<section class="recent-news">
-  <h2>Recent News</h2>
-  <div class="news-layout">
-    
-    <!-- Left featured story -->
-    <div class="news-feature">
-      <h3><a href="news-article1.html">Exciting Updates from the ADHD Community</a></h3>
-      <p>Discover the latest research and stories making waves in the ADHD world.</p>
-      <span class="news-date">Thursday, 2 October 2025</span>
-      <img src="images/megaphone.png" alt="Megaphone" class="news-image">
+  <!-- FEATURED VIDEO + RECENT NEWS -->
+  <section class="media-news">
+    <div class="media-news-grid">
+
+      <!-- Left: Featured Video -->
+      <div class="featured-video">
+        <h2>Featured Video</h2>
+        <div class="video-container">
+          <iframe width="100%" height="250" src="https://www.youtube.com/embed/your-video-id" 
+            title="YouTube video player" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+
+      <!-- Right: Recent News -->
+      <div class="recent-news-side">
+        <h2>Recent News</h2>
+
+        <div class="news-item">
+          <p class="news-date">Thursday, 18 September 2025</p>
+          <h4><a href="#">New Strategies for ADHD at Work</a></h4>
+          <p>Tips and tools to make workplaces more supportive and accessible for everyone.</p>
+        </div>
+
+        <div class="news-item">
+          <p class="news-date">Thursday, 11 September 2025</p>
+          <h4><a href="#">Community Voices: Living Positively with ADHD</a></h4>
+          <p>Read inspiring stories from people embracing their ADHD strengths.</p>
+        </div>
+
+        <div class="news-button">
+          <a href="news.html" class="btn btn-coral">Read more news</a>
+        </div>
+      </div>
+
     </div>
-    
-    <!-- Right side stories -->
-    <div class="news-list">
-      <article class="news-item">
-        <span class="news-date">Thursday, 18 September 2025</span>
-        <h4><a href="news-article2.html">New Strategies for ADHD at Work</a></h4>
-        <p>Tips and tools to make workplaces more supportive and accessible for everyone.</p>
-      </article>
-
-      <article class="news-item">
-        <span class="news-date">Thursday, 11 September 2025</span>
-        <h4><a href="news-article3.html">Community Voices: Living Positively with ADHD</a></h4>
-        <p>Read inspiring stories from people embracing their ADHD strengths.</p>
-      </article>
-    </div>
-  </div>
-
-  <div class="news-button">
-    <a href="news.html" class="btn btn-secondary">Read more news</a>
-  </div>
-</section>
-
-
+  </section>
 
   <!-- FOOTER -->
   <footer class="site-footer">
@@ -156,16 +157,11 @@
           e.preventDefault();
           let submenu = this.nextElementSibling;
           submenu.classList.toggle("active");
+
+          // Rotate arrow
           this.querySelector(".arrow").classList.toggle("rotated");
         }
       });
-    });
-
-    // Newsletter success message
-    document.querySelector(".newsletter-form").addEventListener("submit", function(e){
-      e.preventDefault();
-      document.querySelector(".newsletter-success").classList.add("active");
-      this.reset();
     });
   </script>
 </body>
