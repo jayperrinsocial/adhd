@@ -91,19 +91,26 @@ body{
 
 /* ===== Hero ===== */
 .hero{
-  /* use separate properties so nothing resets the image */
-  background-color: var(--coral);            /* fallback */
-  background-image: url("images/hero-bg.png") !important; /* force load */
+  background-color: var(--coral);
+  background-image: url("images/hero-bg.png") !important;
   background-size: cover;
-  background-position: center top;           /* show the yellow string higher */
+  background-position: center top;
   background-repeat: no-repeat;
   text-align:center;
-  padding: 40px 20px 60px;                   /* smaller top gap */
+  padding: 40px 20px 60px;
   color:#fff;
-  min-height: 280px;                         /* ensure there’s room for the art */
+  min-height: 280px;
 }
-.hero h2{font-size:2.5rem; margin-bottom:12px}
-.hero p{font-size:1.2rem; margin-bottom:20px}
+.hero h2{
+  font-size:2.5rem;
+  margin-bottom:12px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.45); /* stronger shadow for heading */
+}
+.hero p{
+  font-size:1.2rem;
+  margin-bottom:20px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);  /* softer shadow for paragraph */
+}
 .btn{padding:12px 24px; border-radius:30px; font-weight:600; text-decoration:none}
 .btn-primary{background:#fff; color:var(--coral); border:2px solid #fff}
 .btn-secondary{background:var(--mint); color:#fff; border:2px solid #fff}
@@ -154,14 +161,12 @@ body{
 .footer-links {
   margin-bottom: 10px;
 }
-
 .footer-links a {
   color: #000;
   text-decoration: none;
   font-size: 0.95rem;
   font-weight: 500;
 }
-
 .footer-links a:hover {
   color: var(--coral);
   text-decoration: underline;
