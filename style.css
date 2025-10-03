@@ -207,7 +207,7 @@ body{
 .newsletter-signup {
   background: var(--coral);
   text-align: center;
-  padding: 30px 20px; /* reduced top gap */
+  padding: 20px 20px; /* reduced top gap */
   color: #fff;
 }
 .newsletter-signup h2 {
@@ -275,12 +275,12 @@ body{
 }
 .site-footer .social-icons{margin-bottom:10px}
 .site-footer .social-icon-img {
-  width: 40px;
+  width: 50px;
   height: auto;
   margin: 0 10px;
   transition: opacity 0.3s ease;
 }
-.site-footer .social-icon-img:hover {opacity: 0.7;}
+.site-footer .social-icon-img:hover {opacity: 0.5;}
 .site-footer p{margin:0}
 
 /* Footer links */
