@@ -6,7 +6,7 @@
   <title>Mads ADHD</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-  <link rel="stylesheet" href="style.css?v=4">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
@@ -78,23 +78,31 @@
     </a>
   </section>
 
+  <!-- NEWSLETTER SIGNUP -->
+  <section class="newsletter">
+    <h2>Subscribe to our Newsletter</h2>
+    <p>Get the latest ADHD resources, community stories, and updates straight to your inbox.</p>
+    <form class="newsletter-form">
+      <input type="text" name="first-name" placeholder="First name" required>
+      <input type="text" name="last-name" placeholder="Last name" required>
+      <input type="email" name="email" placeholder="Email address" required>
+      <button type="submit" class="btn btn-primary">Sign Up</button>
+    </form>
+  </section>
+
   <!-- FOOTER -->
-<footer class="site-footer">
-  <div class="social-icons">
-    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-    <a href="#"><i class="fa-brands fa-tiktok"></i></a>
-    <a href="#"><i class="fa-brands fa-youtube"></i></a>
-  </div>
-
-  <!-- New links for Privacy Policy + Disclaimer -->
-  <div class="footer-links">
-    <a href="privacy.html">Privacy Policy</a> | 
-    <a href="disclaimer.html">Disclaimer</a>
-  </div>
-
-  <p>&copy; 2025 Mads ADHD. All rights reserved.</p>
-</footer>
-
+  <footer class="site-footer">
+    <div class="social-icons">
+      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+      <a href="#"><i class="fa-brands fa-youtube"></i></a>
+    </div>
+    <div class="footer-links">
+      <a href="privacy.html">Privacy Policy</a> | 
+      <a href="disclaimer.html">Disclaimer</a>
+    </div>
+    <p>&copy; 2025 Mads ADHD. All rights reserved.</p>
+  </footer>
 
   <script>
     // Toggle mobile nav
@@ -109,8 +117,6 @@
           e.preventDefault();
           let submenu = this.nextElementSibling;
           submenu.classList.toggle("active");
-
-          // Rotate arrow
           this.querySelector(".arrow").classList.toggle("rotated");
         }
       });
