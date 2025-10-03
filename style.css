@@ -1,6 +1,6 @@
 :root{
-  --coral:#FF6F61;
-  --mint:#A8E6CF;
+  --coral:#FF6F61; /* used in hero now */
+  --mint:#A8E6CF;  /* used in header + footer */
   --ink:#2C2C2C;
   --paper:#FFFFFF;
   --shadow:0 8px 20px rgba(0,0,0,.08);
@@ -32,7 +32,13 @@ body{
   padding:0 20px;
   position:relative;
 }
-.main-nav .nav-toggle{display:none; background:none; border:none; font-size:1.6rem; cursor:pointer}
+.main-nav .nav-toggle{
+  display:none;
+  background:none;
+  border:none;
+  font-size:1.6rem;
+  cursor:pointer;
+}
 .nav-links{
   list-style:none;
   display:flex;
@@ -40,6 +46,7 @@ body{
   padding:10px 0;
   margin:0;
 }
+.nav-links li{list-style:none}
 .nav-links li a{
   text-decoration:none;
   color:var(--ink);
@@ -47,11 +54,14 @@ body{
   padding:8px 6px;
 }
 .nav-links li a:hover{color:var(--coral)}
+
+/* Dropdown inside nav */
 .dropdown{position:relative; text-align:center}
 .dropdown-menu{
   display:none;
   position:absolute;
-  top:100%; left:50%;
+  top:100%;
+  left:50%;
   transform:translateX(-50%);
   background:#fff;
   box-shadow:var(--shadow);
@@ -61,6 +71,7 @@ body{
   z-index:1000;
   text-align:left;
 }
+.dropdown-menu li{list-style:none}
 .dropdown-menu li a{
   display:block;
   padding:10px 16px;
@@ -68,7 +79,13 @@ body{
   font-weight:500;
 }
 .dropdown-menu li a:hover{background:#f7f7f7; color:var(--coral)}
-@media (min-width: 769px) {.dropdown:hover .dropdown-menu {display:block;}}
+
+/* Desktop hover effect */
+@media (min-width: 769px) {
+  .dropdown:hover .dropdown-menu { display:block; }
+}
+
+/* Arrow rotation */
 .arrow {transition: transform 0.3s ease;}
 .arrow.rotated {transform: rotate(180deg);}
 
@@ -85,7 +102,11 @@ body{
   min-height: 280px;
 }
 .hero h2{font-size:2.5rem; margin-bottom:12px}
-.hero p{font-size:1.2rem; margin-bottom:20px}
+.hero p{
+  font-size:1.2rem;
+  margin-bottom:20px;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.3); /* add subtle shadow for readability */
+}
 .btn{padding:12px 24px; border-radius:30px; font-weight:600; text-decoration:none}
 .btn-primary{background:#fff; color:var(--coral); border:2px solid #fff}
 .btn-secondary{background:var(--mint); color:#fff; border:2px solid #fff}
@@ -113,10 +134,12 @@ body{
 .feature-card p{color:var(--ink)}
 .feature-card:hover{
   transform:translateY(-6px) scale(1.02);
-  box-shadow:0 12px 24px rgba(0,0,0,0.15);
+  box-shadow:0 12px 24px rgba(0,0,0,.15);
   cursor:pointer;
 }
-.feature-icon{width:120px; height:auto; margin:0 auto 15px auto; display:block}
+.feature-icon{
+  width:120px; height:auto; margin:0 auto 15px auto; display:block;
+}
 
 /* ===== Subscribe Section ===== */
 .subscribe-section {
@@ -197,25 +220,33 @@ body{
 }
 .news-item {margin-bottom: 24px;}
 .news-date {
-  font-size: 0.9rem; color: #666; margin-bottom: 6px;
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 6px;
 }
 .news-item h4 a {
-  font-size: 1.2rem; color: var(--coral); text-decoration: none; font-weight: 600;
+  font-size: 1.2rem;
+  color: var(--coral);
+  text-decoration: none;
+  font-weight: 600;
 }
 .news-item h4 a:hover {text-decoration: underline;}
-.news-item p {margin-top: 6px; color: var(--ink); font-size: 1rem;}
+.news-item p {
+  margin-top: 6px;
+  color: var(--ink);
+  font-size: 1rem;
+}
 .news-button {margin-top: 20px;}
 .btn-coral {
-  background: var(--coral); color: #fff;
-  padding: 12px 28px; border-radius: 30px;
-  font-weight: 600; text-decoration: none;
+  background: var(--coral);
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none;
   display: inline-block;
 }
 .btn-coral:hover {opacity: 0.9;}
-@media (max-width: 768px) {
-  .media-news-grid {grid-template-columns: 1fr;}
-  .featured-video, .recent-news-side {text-align: center;}
-}
 
 /* ===== Footer ===== */
 .site-footer{
@@ -228,24 +259,57 @@ body{
 .site-footer .social-icons a{color:#000; margin:0 12px; font-size:2.6rem}
 .site-footer .social-icons a:hover{opacity:.7}
 .site-footer p{margin:0}
-.footer-links {margin-bottom: 10px;}
-.footer-links a {
-  color: #000; text-decoration: none; font-size: 0.95rem; font-weight: 500;
-}
-.footer-links a:hover {color: var(--coral); text-decoration: underline}
 
-/* ===== Responsive Nav ===== */
+/* Footer links */
+.footer-links {
+  margin-bottom: 10px;
+}
+.footer-links a {
+  color: #000;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+.footer-links a:hover {
+  color: var(--coral);
+  text-decoration: underline;
+}
+
+/* ===== Responsive ===== */
 @media (max-width:768px){
   .main-nav{justify-content:center; padding:10px 0}
   .nav-links{
-    display:none; flex-direction:column; align-items:center; text-align:center;
-    gap:16px; width:100%; padding:20px 0;
-    background:#fff; border-top:2px solid #eee; border-bottom:2px solid #eee;
+    display:none;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+    gap:16px;
+    width:100%;
+    padding:20px 0;
+    background:#fff;
+    border-top:2px solid #eee;
+    border-bottom:2px solid #eee;
   }
   .nav-links.active{display:flex}
   .main-nav .nav-toggle{display:block; margin:0 auto; font-size:2rem; color:var(--ink)}
-  .dropdown-menu{position:static; transform:none; box-shadow:none; border-radius:0; min-width:auto; padding:0; display:none; flex-direction:column; align-items:center; text-align:center; background:#fff}
+  .dropdown-menu{
+    position:static;
+    transform:none;
+    box-shadow:none;
+    border-radius:0;
+    min-width:auto;
+    padding:0;
+    display:none;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+    background:#fff;
+  }
   .dropdown-menu.active{display:flex}
   .nav-links li a{font-size:1.1rem; font-weight:600; color:var(--ink)}
   .nav-links li a:hover{color:var(--coral)}
+
+  /* Stack media/news */
+  .media-news-grid {grid-template-columns: 1fr;}
+  .featured-video, .recent-news-side {text-align: center;}
 }
