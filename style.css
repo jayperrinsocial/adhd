@@ -251,7 +251,14 @@ body{
 }
 .news-item {
   margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee; /* faint grey divider */
 }
+
+.news-item:last-child {
+  border-bottom: none; /* remove divider on last */
+}
+
 .news-item .date {
   font-size: 0.9rem;
   color: #777;
