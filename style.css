@@ -207,7 +207,7 @@ body{
 .newsletter-signup {
   background: var(--coral);
   text-align: center;
-  padding: 10px 10px; /* reduced top gap */
+  padding: 30px 20px 70px; /* reduced top gap */
   color: #fff;
 }
 .newsletter-signup h2 {
