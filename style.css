@@ -1,4 +1,4 @@
- /* reduced top spacing */:root{
+:root{
   --coral:#FF6F61; /* hero + buttons */
   --mint:#A8E6CF;  /* header + footer */
   --ink:#2C2C2C;
@@ -147,7 +147,7 @@ body{
   gap: 40px;
   padding: 10px 20px; /* reduced top spacing */
   max-width: 1100px;
-  margin: 0 auto;
+  margin: 0 auto 40px; /* added bottom margin to increase white gap */
 }
 .video-panel, .news-panel {
   flex: 1;
@@ -207,7 +207,7 @@ body{
 .newsletter-signup {
   background: var(--coral);
   text-align: center;
-  padding: 10px 20px 60px; /* reduced top padding, extra bottom padding */
+  padding: 30px 20px 60px; /* more balanced top/bottom padding */
   color: #fff;
 }
 .newsletter-signup h2 {
@@ -269,24 +269,23 @@ body{
 
 /* Tighten the space above the "Read more news" button */
 .news-panel .news-item {
-  margin-bottom: 16px;      /* was 20px */
-  padding-bottom: 34px;     /* was 20px */
+  margin-bottom: 16px;
+  padding-bottom: 34px;
 }
 
 .news-panel .news-item:last-child {
   border-bottom: none;
-  margin-bottom: 2px;       /* reduce gap above the button */
+  margin-bottom: 2px;
   padding-bottom: 2px;
 }
 
 .news-panel p {
-  margin: 0 0 8px;          /* keep paragraph bottoms tight */
+  margin: 0 0 8px;
 }
 
 .news-panel .btn-news {
-  margin-top: 4px;          /* minimal space above the button */
+  margin-top: 4px;
 }
-
 
 /* ===== Footer ===== */
 .site-footer{
@@ -365,5 +364,6 @@ body{
   /* Video + news stacked */
   .video-news {
     flex-direction: column;
+    margin-bottom: 30px; /* keep spacing on mobile too */
   }
 }
