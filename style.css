@@ -166,7 +166,7 @@ body{
 }
 .news-item {
   margin-bottom: 20px;
-  padding-bottom: 30px;
+  padding-bottom: 50px;
   border-bottom: 1px solid #eee;
 }
 .news-item:last-child { border-bottom: none; }
