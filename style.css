@@ -193,7 +193,7 @@ body{
 }
 .btn-news {
   display: inline-block;
-  margin-top: 5px;
+  margin-top: 30px;
   padding: 10px 22px;
   background: var(--coral);
   color: #fff;
