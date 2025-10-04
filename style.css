@@ -155,7 +155,7 @@ body{
 .video-panel h2, .news-panel h2 {
   font-size: 1.8rem;
   color: var(--ink);
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   font-weight: 700;
 }
 .video-container {
@@ -165,7 +165,7 @@ body{
   box-shadow: var(--shadow);
 }
 .news-item {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   padding-bottom: 50px;
   border-bottom: 1px solid #eee;
 }
