@@ -270,13 +270,13 @@ body{
 /* Tighten the space above the "Read more news" button */
 .news-panel .news-item {
   margin-bottom: 16px;      /* was 20px */
-  padding-bottom: 24px;     /* was 20px */
+  padding-bottom: 34px;     /* was 20px */
 }
 
 .news-panel .news-item:last-child {
   border-bottom: none;
-  margin-bottom: 4px;       /* reduce gap above the button */
-  padding-bottom: 4px;
+  margin-bottom: 2px;       /* reduce gap above the button */
+  padding-bottom: 2px;
 }
 
 .news-panel p {
