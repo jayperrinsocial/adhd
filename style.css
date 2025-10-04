@@ -270,7 +270,7 @@ body{
 /* Tighten the space above the "Read more news" button */
 .news-panel .news-item {
   margin-bottom: 16px;      /* was 20px */
-  padding-bottom: 16px;     /* was 20px */
+  padding-bottom: 24px;     /* was 20px */
 }
 
 .news-panel .news-item:last-child {
