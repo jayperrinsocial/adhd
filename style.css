@@ -267,6 +267,27 @@ body{
   }
 }
 
+/* Tighten the space above the "Read more news" button */
+.news-panel .news-item {
+  margin-bottom: 16px;      /* was 20px */
+  padding-bottom: 16px;     /* was 20px */
+}
+
+.news-panel .news-item:last-child {
+  border-bottom: none;
+  margin-bottom: 4px;       /* reduce gap above the button */
+  padding-bottom: 4px;
+}
+
+.news-panel p {
+  margin: 0 0 8px;          /* keep paragraph bottoms tight */
+}
+
+.news-panel .btn-news {
+  margin-top: 4px;          /* minimal space above the button */
+}
+
+
 /* ===== Footer ===== */
 .site-footer{
   background:var(--mint);
