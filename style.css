@@ -222,6 +222,7 @@ body{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  padding: 21x; 
   gap: 12px;
   max-width: 600px;
   margin: 0 auto;
@@ -248,7 +249,7 @@ body{
   font-weight: 600;
   cursor: pointer;
   border-radius: 30px;
-  padding: 20px 48px;
+  padding: 20px 20px;
   height: 42px;
   transition: background 0.2s ease;
 }
