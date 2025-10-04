@@ -107,6 +107,13 @@ body{
   margin-bottom:20px;
   text-shadow:1px 1px 4px rgba(0,0,0,0.35);
 }
+
+/* Newsletter heading + subheading */
+.newsletter-signup h2,
+.newsletter-signup p {
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2);
+}
+
 .btn{padding:12px 24px; border-radius:30px; font-weight:600; text-decoration:none}
 .btn-primary{background:#fff; color:var(--coral); border:2px solid #fff}
 .btn-secondary{background:var(--mint); color:#fff; border:2px solid #fff}
