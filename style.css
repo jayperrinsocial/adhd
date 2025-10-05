@@ -216,7 +216,7 @@ body{
 
 /* ===== Newsletter Section (with background image + overlay) ===== */
 .newsletter-signup {
-  background: var(--coral) url("images/newsletter-bg.png") no-repeat center top;
+  background: url("images/newsletter-bg.png") no-repeat center top;
   background-size: cover;
   text-align: center;
   padding: 30px 20px 60px;
