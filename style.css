@@ -105,7 +105,7 @@ body{
   font-size:2.5rem;
   text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.25);
   margin-bottom:12px;
-        }
+}
 .hero p{
   font-size:1.2rem;
   margin-bottom:20px;
@@ -214,12 +214,28 @@ body{
 }
 .btn-news:hover {opacity: 0.9;}
 
-/* ===== Newsletter Section ===== */
+/* ===== Newsletter Section (with background image + overlay) ===== */
 .newsletter-signup {
-  background: var(--coral);
+  background: var(--coral) url("images/newsletter-bg.png") no-repeat center top;
+  background-size: cover;
   text-align: center;
-  padding: 30px 20px 60px; /* more balanced top/bottom padding */
+  padding: 30px 20px 60px;
   color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+.newsletter-signup::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(255, 111, 97, 0.85); /* coral overlay */
+  z-index: 0;
+}
+.newsletter-signup h2,
+.newsletter-signup p,
+.newsletter-form {
+  position: relative;
+  z-index: 1;
 }
 .newsletter-signup h2 {
   font-size: 2rem;
@@ -259,11 +275,11 @@ body{
   font-weight: 600;
   cursor: pointer;
   border-radius: 30px;
-  padding: 12px 28px;   /* increased padding */
-  min-width: 140px;     /* ensures wider button */
-  height: 46px;         /* slightly taller */
+  padding: 12px 28px;
+  min-width: 140px;
+  height: 46px;
   transition: background 0.2s ease;
-  margin-top: 12px; /* 👈 adds space between inputs and button */
+  margin-top: 12px;
 }
 .newsletter-form button:hover { background: #f7f7f7; }
 @media (max-width: 600px) {
@@ -284,20 +300,13 @@ body{
   margin-bottom: 16px;
   padding-bottom: 34px;
 }
-
 .news-panel .news-item:last-child {
   border-bottom: none;
   margin-bottom: 2px;
   padding-bottom: 2px;
 }
-
-.news-panel p {
-  margin: 0 0 8px;
-}
-
-.news-panel .btn-news {
-  margin-top: 4px;
-}
+.news-panel p { margin: 0 0 8px; }
+.news-panel .btn-news { margin-top: 4px; }
 
 /* ===== Footer ===== */
 .site-footer{
@@ -376,6 +385,6 @@ body{
   /* Video + news stacked */
   .video-news {
     flex-direction: column;
-    margin-bottom: 30px; /* keep spacing on mobile too */
+    margin-bottom: 30px;
   }
 }
