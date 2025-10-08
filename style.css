@@ -294,7 +294,7 @@ body{
   margin: 40px auto;
   padding: 20px;
   display: grid;
-  grid-template-columns: 1fr; /* default: single column */
+  grid-template-columns: 1fr; /* single column by default */
   gap: 20px;
 }
 
@@ -312,7 +312,7 @@ body{
 
 .story-link {
   display: flex;
-  flex-direction: column; /* stack on small screens */
+  flex-direction: column; /* stacked by default */
   text-decoration: none;
   color: inherit;
   gap: 20px;
@@ -336,17 +336,15 @@ body{
   margin: 0;
 }
 
-/* Larger screens - 2 column grid and horizontal card layout */
+/* Larger screens */
 @media (min-width: 768px) {
   .stories-section {
     grid-template-columns: repeat(2, 1fr);
   }
-
   .story-link {
     flex-direction: row;
     align-items: center;
   }
-
   .story-img {
     width: 160px;
     height: 160px;
