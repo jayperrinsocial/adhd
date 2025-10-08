@@ -123,6 +123,13 @@ body{
 .btn-secondary{background:var(--mint); color:#fff; border:2px solid #fff}
 .btn-primary:hover,.btn-secondary:hover{opacity:.9}
 
+/* Smaller hero for Guides page */
+.hero-guides {
+  min-height: 180px;         /* smaller than the default 260px */
+  padding: 15px 20px 30px;   /* less top/bottom padding */
+}
+
+
 /* ===== Features ===== */
 .features{
   display:grid;
