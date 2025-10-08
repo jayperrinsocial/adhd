@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Free Guides and Resources - Mads ADHD</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== Header ===== -->
+  <header class="site-header">
+    <img src="images/logo.png" alt="Mads ADHD Logo" class="site-logo">
+  </header>
+
+  <!-- ===== Navigation ===== -->
+  <nav class="main-nav">
+    <button class="nav-toggle">☰</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="guides.html" class="active">Guides</a></li>
+      <li class="dropdown">
+        <a href="#">Information and Support <span class="arrow">▼</span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Legal Rights</a></li>
+          <li><a href="#">Templates</a></li>
+          <li><a href="#">Community Stories</a></li>
+        </ul>
+      </li>
+      <li><a href="news.html">News</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== Hero Section ===== -->
+  <section class="hero about-hero">
+    <h2>Free Guides and Resources</h2>
+    <p>Explore helpful guides, practical resources, and tools designed to support you on your ADHD journey.</p>
+  </section>
+
+  <!-- ===== Intro Text ===== -->
+  <section class="about-content">
+    <div class="container">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere risus nec nisi viverra, eget facilisis elit lacinia. Mauris ac velit non risus malesuada mattis. Donec nec purus vitae magna egestas finibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.</p>
+    </div>
+  </section>
+
+  <!-- ===== Guides Panels ===== -->
+  <section class="features">
+    <a href="#" class="feature-card">
+      <img src="images/icon1.png" alt="Panel 1 Icon" class="feature-icon">
+      <h3>Panel 1</h3>
+      <p>Short description about panel 1 content.</p>
+    </a>
+    <a href="#" class="feature-card">
+      <img src="images/icon2.png" alt="Panel 2 Icon" class="feature-icon">
+      <h3>Panel 2</h3>
+      <p>Short description about panel 2 content.</p>
+    </a>
+    <a href="#" class="feature-card">
+      <img src="images/icon3.png" alt="Panel 3 Icon" class="feature-icon">
+      <h3>Panel 3</h3>
+      <p>Short description about panel 3 content.</p>
+    </a>
+  </section>
+
+  <!-- ===== Newsletter Signup ===== -->
+  <section class="newsletter-signup">
+    <h2>Stay in the Loop</h2>
+    <p>Subscribe to our Newsletter for ADHD updates, resources, and community stories.</p>
+    <form class="newsletter-form">
+      <input type="text" placeholder="First name" required>
+      <input type="text" placeholder="Last name" required>
+      <input type="email" placeholder="Email address" required>
+      <button type="submit">Sign up</button>
+    </form>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer">
+    <div class="social-icons">
+      <a href="#"><img src="images/instagramicon.png" alt="Instagram" class="social-icon-img"></a>
+      <a href="#"><img src="images/tiktokicon.png" alt="TikTok" class="social-icon-img"></a>
+      <a href="#"><img src="images/youtubeicon.png" alt="YouTube" class="social-icon-img"></a>
+    </div>
+    <div class="footer-links">
+      <a href="privacy.html">Privacy Policy</a> | 
+      <a href="disclaimer.html">Disclaimer</a>
+    </div>
+    <p>© 2025 Mads ADHD. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Mobile nav toggle
+    const navToggle = document.querySelector('.nav-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    navToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+
+    // Dropdown toggle on mobile
+    const dropdown = document.querySelector('.dropdown > a');
+    const dropdownMenu = document.querySelector('.dropdown-menu');
+    dropdown.addEventListener('click', (e) => {
+      if(window.innerWidth <= 768){
+        e.preventDefault();
+        dropdownMenu.classList.toggle('active');
+      }
+    });
+  </script>
+
+</body>
+</html>
