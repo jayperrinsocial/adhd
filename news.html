@@ -1,40 +1,118 @@
-/* ===== News Listing Page ===== */
-.news-card {
-  display: flex;
-  gap: 20px;
-  margin-bottom: 30px;
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: var(--shadow);
-  overflow: hidden;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-.news-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 24px rgba(0,0,0,0.12);
-}
-.news-thumb {
-  width: 250px;
-  object-fit: cover;
-}
-.news-content {
-  padding: 20px;
-  flex: 1;
-}
-.news-content .date {
-  font-size: 0.9rem;
-  color: #777;
-  margin-bottom: 6px;
-}
-.news-content h3 {
-  font-size: 1.4rem;
-  color: var(--coral);
-  margin-bottom: 10px;
-}
-.news-content h3 a {
-  color: var(--coral);
-  text-decoration: none;
-}
-.news-content h3 a:hover {
-  text-decoration: underline;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News - Mads ADHD</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== Header ===== -->
+  <header class="site-header">
+    <img src="images/logo.png" alt="Mads ADHD Logo" class="site-logo">
+  </header>
+
+  <!-- ===== Navigation ===== -->
+  <nav class="main-nav">
+    <button class="nav-toggle">☰</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li class="dropdown">
+        <a href="#">Information and Support <span class="arrow">▼</span></a>
+        <ul class="dropdown-menu">
+          <li><a href="guides.html">Free Guides</a></li>
+          <li><a href="real-life-stories.html">Real Life Stories</a></li>
+        </ul>
+      </li>
+      <li><a href="news.html">News</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== Hero Section ===== -->
+  <section class="hero">
+    <h2>News</h2>
+    <p>Stay up to date with the latest ADHD-related updates, community news, and resources.</p>
+  </section>
+
+  <!-- ===== News Listing ===== -->
+  <section class="news-listing" style="max-width:1100px; margin:40px auto; padding:20px;">
+    
+    <div class="news-card">
+      <img src="images/news-placeholder1.jpg" alt="News 1" class="news-thumb">
+      <div class="news-content">
+        <p class="date">8 October 2025</p>
+        <h3><a href="news-article1.html">Big ADHD Awareness Campaign Launched</a></h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac nisl eu sapien luctus tincidunt. Duis facilisis suscipit est, at malesuada magna tristique ac.</p>
+      </div>
+    </div>
+
+    <div class="news-card">
+      <img src="images/news-placeholder2.jpg" alt="News 2" class="news-thumb">
+      <div class="news-content">
+        <p class="date">2 October 2025</p>
+        <h3><a href="news-article2.html">Community Voices: Living Positively with ADHD</a></h3>
+        <p>Donec nec purus vitae magna egestas finibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+      </div>
+    </div>
+
+    <div class="news-card">
+      <img src="images/news-placeholder3.jpg" alt="News 3" class="news-thumb">
+      <div class="news-content">
+        <p class="date">25 September 2025</p>
+        <h3><a href="news-article3.html">Right to Choose: What You Need to Know</a></h3>
+        <p>Integer posuere risus nec nisi viverra, eget facilisis elit lacinia. Mauris ac velit non risus malesuada mattis, vel aliquet ligula mi non mi.</p>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ===== Newsletter Signup ===== -->
+  <section class="newsletter-signup">
+    <h2>Stay in the Loop</h2>
+    <p>Subscribe to our Newsletter for ADHD updates, resources, and community stories.</p>
+    <form class="newsletter-form">
+      <input type="text" placeholder="First name" required>
+      <input type="text" placeholder="Last name" required>
+      <input type="email" placeholder="Email address" required>
+      <button type="submit">Sign up</button>
+    </form>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer">
+    <div class="social-icons">
+      <a href="#"><img src="images/instagramicon.png" alt="Instagram" class="social-icon-img"></a>
+      <a href="#"><img src="images/tiktokicon.png" alt="TikTok" class="social-icon-img"></a>
+      <a href="#"><img src="images/youtubeicon.png" alt="YouTube" class="social-icon-img"></a>
+    </div>
+    <div class="footer-links">
+      <a href="privacy.html">Privacy Policy</a> | 
+      <a href="disclaimer.html">Disclaimer</a>
+    </div>
+    <p>© 2025 Mads ADHD. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Mobile nav toggle
+    const navToggle = document.querySelector('.nav-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    navToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+
+    // Dropdown toggle on mobile
+    const dropdown = document.querySelector('.dropdown > a');
+    const dropdownMenu = document.querySelector('.dropdown-menu');
+    dropdown.addEventListener('click', (e) => {
+      if(window.innerWidth <= 768){
+        e.preventDefault();
+        dropdownMenu.classList.toggle('active');
+      }
+    });
+  </script>
+
+</body>
+</html>
