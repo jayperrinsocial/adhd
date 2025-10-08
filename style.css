@@ -112,6 +112,12 @@ body{
   text-shadow:1px 1px 4px rgba(0,0,0,0.35);
 }
 
+/* ===== Guides Hero (smaller height) ===== */
+.hero-guides {
+  min-height: 180px;
+  padding: 15px 20px 30px;
+}
+
 /* Newsletter heading + subheading */
 .newsletter-signup h2,
 .newsletter-signup p {
@@ -122,12 +128,6 @@ body{
 .btn-primary{background:#fff; color:var(--coral); border:2px solid #fff}
 .btn-secondary{background:var(--mint); color:#fff; border:2px solid #fff}
 .btn-primary:hover,.btn-secondary:hover{opacity:.9}
-
-/* Smaller hero for Guides page */
-.hero-guides {
-  min-height: 180px;         /* smaller than the default 260px */
-  padding: 15px 20px 30px;   /* less top/bottom padding */
-}
 
 
 /* ===== Features ===== */
