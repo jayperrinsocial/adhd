@@ -362,6 +362,55 @@ body{
     width: 100%;
   }
 
+  .stories-section {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.story-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+
+.story-card:hover {
+  transform: translateY(-5px);
+}
+
+.story-link {
+  display: flex;
+  text-decoration: none;
+  color: inherit;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.story-img {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 12px;
+  flex-shrink: 0;
+}
+
+.story-content h3 {
+  color: var(--coral);
+  margin-bottom: 8px;
+}
+
+.story-content p {
+  color: var(--ink);
+  margin: 0;
+}
+
+
   /* Video + news stacked */
   .video-news {
     flex-direction: column;
