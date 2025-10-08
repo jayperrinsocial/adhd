@@ -97,7 +97,7 @@ body{
   background-position: center top;
   background-repeat: no-repeat;
   text-align:center;
-  padding: 20px 20px 50px; /* tightened top/bottom */
+  padding: 20px 20px 50px;
   color:#fff;
   min-height: 260px;
 }
@@ -112,6 +112,22 @@ body{
   text-shadow:1px 1px 4px rgba(0,0,0,0.35);
 }
 
+/* ===== Guides Page Heading ===== */
+.guides-heading {
+  padding: 25px 20px 10px;
+  text-align: center;
+}
+.guides-heading h2 {
+  color: var(--coral);
+  font-size: 2rem;
+  margin: 0 0 6px;
+}
+.guides-heading p {
+  margin: 0;
+  font-size: 1rem;
+  color: var(--ink);
+}
+
 /* ===== Guides Hero (smaller height) ===== */
 .hero-guides {
   min-height: 180px;
@@ -122,22 +138,6 @@ body{
 .real-life-stories-guides {
   min-height: 150px;
   padding: 10px 15px 20px;
-}
-
-/* ===== Guides Page Heading ===== */
-.guides-heading {
-  text-align: center;
-  padding: 30px 20px;
-}
-.guides-heading h2 {
-  color: var(--coral);
-  font-size: 2rem;
-  margin: 0 0 6px; /* smaller gap under heading */
-}
-.guides-heading p {
-  margin: 0;
-  font-size: 1rem;
-  color: var(--ink);
 }
 
 /* Newsletter heading + subheading */
@@ -192,13 +192,12 @@ body{
   text-decoration: underline;
 }
 
-
 /* ===== Features ===== */
 .features{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
   gap:20px;
-  padding:30px 20px 20px; /* reduced bottom space */
+  padding:30px 20px 20px;
 }
 .feature-card{
   background:#fff;
@@ -226,9 +225,9 @@ body{
 .video-news {
   display: flex;
   gap: 40px;
-  padding: 10px 20px; /* reduced top spacing */
+  padding: 10px 20px;
   max-width: 1100px;
-  margin: 0 auto 40px; /* added bottom margin */
+  margin: 0 auto 40px;
 }
 .video-panel, .news-panel {
   flex: 1;
@@ -284,7 +283,7 @@ body{
 }
 .btn-news:hover {opacity: 0.9;}
 
-/* ===== Newsletter Section (with background image only) ===== */
+/* ===== Newsletter Section ===== */
 .newsletter-signup {
   background: url("images/newsletter-bg.png") no-repeat center top;
   background-size: cover;
@@ -341,33 +340,15 @@ body{
 }
 .newsletter-form button:hover { background: #f7f7f7; }
 
-/* Tighten the space above the "Read more news" button */
-.news-panel .news-item {
-  margin-bottom: 16px;
-  padding-bottom: 34px;
-}
-.news-panel .news-item:last-child {
-  border-bottom: none;
-  margin-bottom: 2px;
-  padding-bottom: 2px;
-}
-.news-panel p {
-  margin: 0 0 8px;
-}
-.news-panel .btn-news {
-  margin-top: 4px;
-}
-
 /* ===== Real Life Stories Section ===== */
 .stories-section {
   max-width: 1000px;
   margin: 40px auto;
   padding: 20px;
   display: grid;
-  grid-template-columns: 1fr; /* single column by default */
+  grid-template-columns: 1fr;
   gap: 20px;
 }
-
 .story-card {
   background: #fff;
   border-radius: 12px;
@@ -375,38 +356,29 @@ body{
   overflow: hidden;
   transition: transform 0.2s ease;
 }
-
-.story-card:hover {
-  transform: translateY(-5px);
-}
-
+.story-card:hover { transform: translateY(-5px); }
 .story-link {
   display: flex;
-  flex-direction: column; /* stacked by default */
+  flex-direction: column;
   text-decoration: none;
   color: inherit;
   gap: 20px;
   padding: 20px;
 }
-
 .story-img {
   width: 100%;
   height: 200px;
   object-fit: cover;
   border-radius: 12px;
 }
-
 .story-content h3 {
   color: var(--coral);
   margin-bottom: 8px;
 }
-
 .story-content p {
   color: var(--ink);
   margin: 0;
 }
-
-/* Larger screens */
 @media (min-width: 768px) {
   .stories-section {
     grid-template-columns: repeat(2, 1fr);
@@ -489,16 +461,21 @@ body{
   .nav-links li a:hover{color:var(--coral)}
 
   /* Newsletter responsive */
-  .newsletter-form {
-    flex-direction: column;
-  }
-  .newsletter-form input, .newsletter-form button {
-    width: 100%;
-  }
+  .newsletter-form { flex-direction: column; }
+  .newsletter-form input, .newsletter-form button { width: 100%; }
 
   /* Video + news stacked */
-  .video-news {
-    flex-direction: column;
-    margin-bottom: 30px;
+  .video-news { flex-direction: column; margin-bottom: 30px; }
+
+  /* Guides page heading mobile */
+  .guides-heading {
+    padding: 20px 15px;
+  }
+  .guides-heading h2 {
+    font-size: 1.6rem;
+    margin: 0 0 4px;
+  }
+  .guides-heading p {
+    font-size: 0.95rem;
   }
 }
