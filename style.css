@@ -124,6 +124,22 @@ body{
   padding: 10px 15px 20px;
 }
 
+/* ===== Guides Page Heading ===== */
+.guides-heading {
+  text-align: center;
+  padding: 30px 20px;
+}
+.guides-heading h2 {
+  color: var(--coral);
+  font-size: 2rem;
+  margin: 0 0 6px; /* smaller gap under heading */
+}
+.guides-heading p {
+  margin: 0;
+  font-size: 1rem;
+  color: var(--ink);
+}
+
 /* Newsletter heading + subheading */
 .newsletter-signup h2,
 .newsletter-signup p {
