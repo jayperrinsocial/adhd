@@ -118,6 +118,12 @@ body{
   padding: 15px 20px 30px;
 }
 
+/* ===== Real life stories Hero (smaller height) ===== */
+.real-life-stories-guides {
+  min-height: 180px;
+  padding: 15px 20px 30px;
+}
+
 /* Newsletter heading + subheading */
 .newsletter-signup h2,
 .newsletter-signup p {
