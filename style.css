@@ -510,3 +510,16 @@ body.homepage .features {
   padding-top: 20px;
 }
 
+.video-news {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.news-panel .btn-news {
+  margin-bottom: 0;
+}
+
+.newsletter-signup {
+  margin-top: 0;
+}
+
