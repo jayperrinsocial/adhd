@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>News - Mads ADHD</title>
-  
+
   <!-- Google Fonts (Poppins) -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 
@@ -14,7 +14,6 @@
   <!-- Main stylesheet -->
   <link rel="stylesheet" href="style.css?v=4">
 </head>
-
 <body>
 
   <!-- ===== Header ===== -->
@@ -28,7 +27,7 @@
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About Us</a></li>
-     <li class="dropdown">
+      <li class="dropdown">
         <a href="#" class="dropdown-toggle">
           Information and Support <i class="fa-solid fa-caret-down arrow"></i>
         </a>
@@ -46,6 +45,7 @@
           <li><a href="lovedones.html">A MSG to Loved Ones</a></li>
         </ul>
       </li>
+      <li><a href="news.html">News</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
   </nav>
@@ -55,7 +55,6 @@
     <h2>News</h2>
     <p>Stay up to date with the latest ADHD-related updates, community news, and resources.</p>
   </section>
-
 
   <!-- ===== News Listing ===== -->
   <section class="news-listing" style="max-width:1100px; margin:40px auto; padding:20px;">
@@ -115,6 +114,7 @@
     <p>© 2025 Mads ADHD. All rights reserved.</p>
   </footer>
 
+  <!-- ===== Scripts ===== -->
   <script>
     // Mobile nav toggle
     const navToggle = document.querySelector('.nav-toggle');
@@ -123,13 +123,14 @@
       navLinks.classList.toggle('active');
     });
 
-    // Dropdown toggle on mobile
+    // Dropdown toggle + arrow rotation on mobile
     const dropdown = document.querySelector('.dropdown > a');
     const dropdownMenu = document.querySelector('.dropdown-menu');
     dropdown.addEventListener('click', (e) => {
-      if(window.innerWidth <= 768){
+      if (window.innerWidth <= 768) {
         e.preventDefault();
         dropdownMenu.classList.toggle('active');
+        dropdown.querySelector('.arrow').classList.toggle('rotated');
       }
     });
   </script>
