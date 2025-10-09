@@ -159,12 +159,6 @@ body.homepage .video-news {
   padding: 15px 20px 30px;
 }
 
-/* ===== Real life stories Hero (smaller height) ===== */
-.real-life-stories-guides {
-  min-height: 150px;
-  padding: 10px 15px 20px;
-}
-
 /* ===== News Hero (smaller height) ===== */
 .news-guides {
   min-height: 150px;
