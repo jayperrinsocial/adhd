@@ -499,3 +499,13 @@ body{
     margin-top: 2px;
   }
 }
+
+/* ===== Homepage specific spacing tweak ===== */
+body.homepage .hero {
+  padding-bottom: 35px;
+}
+
+body.homepage .features {
+  padding-top: 20px;
+}
+
