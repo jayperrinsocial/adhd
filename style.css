@@ -535,15 +535,22 @@ body.homepage .features {
 .news-panel .btn-news {
   margin-top: 6px; /* smaller, cleaner spacing */
 }
-
-/* === Fix homepage gap between news and newsletter === */
+/* === FINAL FIX: Remove white gap between video-news and newsletter === */
 body.homepage .video-news {
   margin-bottom: 0 !important;
   padding-bottom: 0 !important;
 }
 
-body.homepage .newsletter-signup {
-  margin-top: -20px !important; /* pulls coral section upward */
-  padding-top: 20px !important; /* keep a little breathing room inside */
+body.homepage .video-news + .newsletter-signup {
+  margin-top: 0 !important;
+  padding-top: 30px !important;
+  background-position: center top;
 }
 
+body.homepage .newsletter-signup::before {
+  content: '';
+  display: block;
+  height: 0;
+  margin: 0;
+  padding: 0;
+}
