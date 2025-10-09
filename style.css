@@ -536,4 +536,14 @@ body.homepage .features {
   margin-top: 6px; /* smaller, cleaner spacing */
 }
 
+/* === Fix homepage gap between news and newsletter === */
+body.homepage .video-news {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+body.homepage .newsletter-signup {
+  margin-top: -20px !important; /* pulls coral section upward */
+  padding-top: 20px !important; /* keep a little breathing room inside */
+}
 
