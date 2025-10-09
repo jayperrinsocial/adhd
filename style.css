@@ -128,6 +128,22 @@ body{
   color: var(--ink);
 }
 
+/* ===== Simple Page Heading (used for Real Life Stories) ===== */
+.simple-heading {
+  padding: 25px 20px 10px;
+  text-align: center;
+}
+.simple-heading h2 {
+  color: var(--coral);
+  font-size: 2rem;
+  margin: 0 0 6px;
+}
+.simple-heading p {
+  margin: 0;
+  font-size: 1rem;
+  color: var(--ink);
+}
+
 /* ===== Guides Hero (smaller height) ===== */
 .hero-guides {
   min-height: 180px;
@@ -467,15 +483,19 @@ body{
   /* Video + news stacked */
   .video-news { flex-direction: column; margin-bottom: 30px; }
 
-  /* Guides page heading mobile */
-  .guides-heading {
-    padding: 20px 15px;
+  /* Guides + Simple page heading mobile */
+  .guides-heading,
+  .simple-heading {
+    padding: 18px 15px 8px;
   }
-  .guides-heading h2 {
+  .guides-heading h2,
+  .simple-heading h2 {
     font-size: 1.6rem;
     margin: 0 0 4px;
   }
-  .guides-heading p {
+  .guides-heading p,
+  .simple-heading p {
     font-size: 0.95rem;
+    margin-top: 2px;
   }
 }
