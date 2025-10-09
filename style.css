@@ -165,6 +165,12 @@ body.homepage .video-news {
   padding: 10px 15px 20px;
 }
 
+/* ===== News Hero (smaller height) ===== */
+.news-guides {
+  min-height: 150px;
+  padding: 10px 15px 20px;
+}
+
 /* Newsletter heading + subheading */
 .newsletter-signup h2,
 .newsletter-signup p {
