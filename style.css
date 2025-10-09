@@ -532,3 +532,8 @@ body.homepage .features {
   margin-top: 0;
 }
 
+.news-panel .btn-news {
+  margin-top: 6px; /* smaller, cleaner spacing */
+}
+
+
