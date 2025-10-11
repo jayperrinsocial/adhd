@@ -21,7 +21,6 @@ body.homepage .video-news {
   margin-bottom: 0;
 }
 
-
 /* ===== Header ===== */
 .site-header{
   background:var(--mint);
@@ -137,7 +136,7 @@ body.homepage .video-news {
   color: var(--ink);
 }
 
-/* ===== Simple Page Heading (used for Real Life Stories) ===== */
+/* ===== Simple Page Heading ===== */
 .simple-heading {
   padding: 25px 20px 10px;
   text-align: center;
@@ -153,17 +152,15 @@ body.homepage .video-news {
   color: var(--ink);
 }
 
-/* ===== Guides Hero (smaller height) ===== */
+/* ===== Smaller Heroes ===== */
 .hero-guides {
   min-height: 180px;
   padding: 15px 20px 30px;
 }
-
-/* ===== News Hero (smaller height, like privacy/disclaimer) ===== */
 .hero.hero-news,
 .hero.news-guides {
   min-height: 150px;
-  padding: 12px 20px 22px; /* smaller than default hero */
+  padding: 12px 20px 22px;
   background-position: center top;
 }
 .hero.hero-news h2,
@@ -171,18 +168,7 @@ body.homepage .video-news {
 .hero.hero-news p,
 .hero.news-guides p { margin-bottom: 0; }
 
-/* Newsletter heading + subheading */
-.newsletter-signup h2,
-.newsletter-signup p {
-  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2);
-}
-
-.btn{padding:12px 24px; border-radius:30px; font-weight:600; text-decoration:none}
-.btn-primary{background:#fff; color:var(--coral); border:2px solid #fff}
-.btn-secondary{background:var(--mint); color:#fff; border:2px solid #fff}
-.btn-primary:hover,.btn-secondary:hover{opacity:.9}
-
-/* ===== News Listing Page ===== */
+/* ===== News Listing ===== */
 .news-card {
   display: flex;
   gap: 20px;
@@ -224,32 +210,32 @@ body.homepage .video-news {
 }
 
 /* ===== Features ===== */
-.features{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-  gap:20px;
-  padding:30px 20px 20px;
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 30px 20px 20px;
 }
-.feature-card{
-  background:#fff;
-  padding:20px;
-  border-radius:12px;
-  box-shadow:var(--shadow);
-  text-align:center;
-  text-decoration:none;
-  color:inherit;
-  transition:transform .2s ease, box-shadow .2s ease;
-  display:block;
+.feature-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+  transition: transform .2s ease, box-shadow .2s ease;
+  display: block;
 }
-.feature-card h3{color:var(--coral); margin-top:10px}
-.feature-card p{color:var(--ink)}
-.feature-card:hover{
-  transform:translateY(-6px) scale(1.02);
-  box-shadow:0 12px 24px rgba(0,0,0,.15);
-  cursor:pointer;
+.feature-card h3 { color: var(--coral); margin-top: 10px; }
+.feature-card p { color: var(--ink); }
+.feature-card:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 12px 24px rgba(0,0,0,.15);
+  cursor: pointer;
 }
-.feature-icon{
-  width:120px; height:auto; margin:0 auto 15px auto; display:block;
+.feature-icon {
+  width: 120px; height: auto; margin: 0 auto 15px auto; display: block;
 }
 
 /* ===== Video + News Section ===== */
@@ -258,12 +244,9 @@ body.homepage .video-news {
   gap: 40px;
   padding: 10px 20px;
   max-width: 1100px;
-  margin: 0 auto 15px; /* was 40px — now reduced */
+  margin: 0 auto 15px;
 }
-
-.video-panel, .news-panel {
-  flex: 1;
-}
+.video-panel, .news-panel { flex: 1; }
 .video-panel h2, .news-panel h2 {
   font-size: 1.8rem;
   color: var(--ink);
@@ -276,44 +259,6 @@ body.homepage .video-news {
   overflow: hidden;
   box-shadow: var(--shadow);
 }
-.news-item {
-  margin-bottom: 30px;
-  padding-bottom: 50px;
-  border-bottom: 1px solid #eee;
-}
-.news-item:last-child { border-bottom: none; }
-.news-item .date {
-  font-size: 0.9rem;
-  color: #777;
-  margin-bottom: 6px;
-}
-.news-item h3 {
-  font-size: 1.2rem;
-  color: var(--coral);
-  margin-bottom: 5px;
-}
-.news-item h3 a {
-  color: var(--coral);
-  text-decoration: none;
-}
-.news-item h3 a:hover {
-  text-decoration: underline;
-}
-.news-item p {
-  font-size: 1rem;
-  color: var(--ink);
-}
-.btn-news {
-  display: inline-block;
-  margin-top: 8px;  
-  padding: 12px 26px;
-  background: var(--coral);
-  color: #fff;
-  border-radius: 30px;
-  text-decoration: none;
-  font-weight: 600;
-}
-.btn-news:hover {opacity: 0.9;}
 
 /* ===== Newsletter Section ===== */
 .newsletter-signup {
@@ -324,107 +269,8 @@ body.homepage .video-news {
   color: #fff;
   position: relative;
 }
-.newsletter-signup h2 {
-  font-size: 2rem;
-  margin-bottom: 10px;
-}
-.newsletter-signup p {
-  font-size: 1rem;
-  margin-bottom: 20px;
-}
-.newsletter-form {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 12px;
-  max-width: 600px;
-  margin: 0 auto;
-  position: relative;
-  z-index: 1;
-}
-.newsletter-form input,
-.newsletter-form button {
-  font-family: 'Poppins', sans-serif;
-  padding: 8px 12px;
-  border: none;
-  border-radius: 6px;
-  font-size: 0.95rem;
-  line-height: 1.2;
-  box-sizing: border-box;
-}
-.newsletter-form input {
-  flex: 1;
-  min-width: 160px;
-  max-width: 100%;
-  height: 42px;
-}
-.newsletter-form button {
-  background: #fff;
-  color: var(--coral);
-  font-weight: 600;
-  cursor: pointer;
-  border-radius: 30px;
-  padding: 12px 28px;
-  min-width: 140px;
-  height: 46px;
-  transition: background 0.2s ease;
-  margin-top: 12px;
-}
-.newsletter-form button:hover { background: #f7f7f7; }
-
-/* ===== Real Life Stories Section ===== */
-.stories-section {
-  max-width: 1000px;
-  margin: 40px auto;
-  padding: 20px;
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 20px;
-}
-.story-card {
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: var(--shadow);
-  overflow: hidden;
-  transition: transform 0.2s ease;
-}
-.story-card:hover { transform: translateY(-5px); }
-.story-link {
-  display: flex;
-  flex-direction: column;
-  text-decoration: none;
-  color: inherit;
-  gap: 20px;
-  padding: 20px;
-}
-.story-img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 12px;
-}
-.story-content h3 {
-  color: var(--coral);
-  margin-bottom: 8px;
-}
-.story-content p {
-  color: var(--ink);
-  margin: 0;
-}
-@media (min-width: 768px) {
-  .stories-section {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .story-link {
-    flex-direction: row;
-    align-items: center;
-  }
-  .story-img {
-    width: 160px;
-    height: 160px;
-    flex-shrink: 0;
-  }
-}
+.newsletter-signup h2 { font-size: 2rem; margin-bottom: 10px; }
+.newsletter-signup p { font-size: 1rem; margin-bottom: 20px; }
 
 /* ===== Footer ===== */
 .site-footer{
@@ -441,12 +287,7 @@ body.homepage .video-news {
   transition: opacity 0.3s ease;
 }
 .site-footer .social-icon-img:hover {opacity: 0.5;}
-.site-footer p{margin:0}
-
-/* Footer links */
-.footer-links {
-  margin-bottom: 10px;
-}
+.footer-links { margin-bottom: 10px; }
 .footer-links a {
   color: #000;
   text-decoration: none;
@@ -475,44 +316,17 @@ body.homepage .video-news {
   }
   .nav-links.active{display:flex}
   .main-nav .nav-toggle{display:block; margin:0 auto; font-size:2rem; color:var(--ink)}
-  .dropdown-menu{
-    position:static;
-    transform:none;
-    box-shadow:none;
-    border-radius:0;
-    min-width:auto;
-    padding:0;
-    display:none;
-    flex-direction:column;
-    align-items:center;
-    text-align:center;
-    background:#fff;
-  }
-  .dropdown-menu.active{display:flex}
-  .nav-links li a{font-size:1.1rem; font-weight:600; color:var(--ink)}
 
-@media (max-width: 768px) {
+  /* News cards stack */
   .news-card {
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
-  .news-thumb {
-    width: 100%;
-    height: auto;
-  }
-  .news-content {
-    padding: 15px;
-  }
-  .news-content h3 {
-    font-size: 1.3rem;
-  }
-  .news-content p {
-    font-size: 1rem;
-  }
-}
+  .news-thumb { width: 100%; height: auto; }
+  .news-content { padding: 15px; }
+  .news-content h3 { font-size: 1.3rem; }
 
-  
   /* Newsletter responsive */
   .newsletter-form { flex-direction: column; }
   .newsletter-form input, .newsletter-form button { width: 100%; }
@@ -521,59 +335,31 @@ body.homepage .video-news {
   .video-news { flex-direction: column; margin-bottom: 30px; }
 
   /* Guides + Simple page heading mobile */
-  .guides-heading,
-  .simple-heading {
-    padding: 18px 15px 8px;
-  }
-  .guides-heading h2,
-  .simple-heading h2 {
+  .guides-heading, .simple-heading { padding: 18px 15px 8px; }
+  .guides-heading h2, .simple-heading h2 {
     font-size: 1.6rem;
     margin: 0 0 4px;
   }
-  .guides-heading p,
-  .simple-heading p {
+  .guides-heading p, .simple-heading p {
     font-size: 0.95rem;
     margin-top: 2px;
   }
 }
 
 /* ===== Homepage specific spacing tweak ===== */
-body.homepage .hero {
-  padding-bottom: 35px;
-}
+body.homepage .hero { padding-bottom: 35px; }
+body.homepage .features { padding-top: 20px; }
+.video-news { margin-bottom: 0; padding-bottom: 0; }
+.news-panel .btn-news { margin-top: 6px; }
+.newsletter-signup { margin-top: 0; }
 
-body.homepage .features {
-  padding-top: 20px;
-}
-
-.video-news {
-  margin-bottom: 0;
-  padding-bottom: 0;
-}
-
-.news-panel .btn-news {
-  margin-bottom: 0;
-}
-
-.newsletter-signup {
-  margin-top: 0;
-}
-
-.news-panel .btn-news {
-  margin-top: 6px; /* smaller, cleaner spacing */
-}
-/* === FINAL FIX: Remove white gap between video-news and newsletter === */
-body.homepage .video-news {
-  margin-bottom: 0 !important;
-  padding-bottom: 0 !important;
-}
-
+/* === Remove white gap === */
+body.homepage .video-news { margin-bottom: 0 !important; padding-bottom: 0 !important; }
 body.homepage .video-news + .newsletter-signup {
   margin-top: 0 !important;
   padding-top: 30px !important;
   background-position: center top;
 }
-
 body.homepage .newsletter-signup::before {
   content: '';
   display: block;
@@ -582,29 +368,14 @@ body.homepage .newsletter-signup::before {
   padding: 0;
 }
 
-/* === Mobile layout: two feature cards per row === */
-@media (max-width: 768px) {
-  .features {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 12px;
-    padding: 15px;
-  }
-
-  .feature-card {
-    padding: 16px;
-  }
-
-  .feature-icon {
-    width: 90px;
-    margin-bottom: 10px;
-  }
-
-  .feature-card h3 {
-    font-size: 1rem;
-  }
-
-  .feature-card p {
-    font-size: 0.9rem;
+/* === Information & Support Page: Two cards per row on mobile === */
+body.information-support .features {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  padding: 15px;
+}
+@media (max-width: 480px) {
+  body.information-support .features {
+    grid-template-columns: 1fr; /* back to one per row on small screens */
   }
 }
-
