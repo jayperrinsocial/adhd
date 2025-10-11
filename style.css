@@ -379,3 +379,30 @@ body.information-support .features {
     grid-template-columns: 1fr; /* back to one per row on small screens */
   }
 }
+
+/* --- Fix: hero CTA renders as a real button, no underline --- */
+.hero .btn,
+a.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none !important;
+}
+.hero .btn-primary {
+  background: #fff;
+  color: var(--coral) !important;
+  border: 2px solid #fff;
+}
+
+/* --- Fix: Recent News links use brand styling, not default blue/underline --- */
+.news-panel .news-item h3 a {
+  color: var(--coral) !important;
+  text-decoration: none !important;
+}
+.news-panel .news-item h3 a:hover {
+  text-decoration: underline !important;
+}
+
+/* Safety: feature cards should never show underlines */
+.feature-card { text-decoration: none !important; }
