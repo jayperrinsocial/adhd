@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Important Websites - Mads ADHD</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <a href="index.html">
+      <img src="images/logo.png" alt="Mads ADHD Logo" class="site-logo">
+    </a>
+  </header>
+
+  <nav class="main-nav">
+    <button class="nav-toggle">☰</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="information_and_support.html">Information & Support</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="simple-heading">
+    <h2>Important Websites</h2>
+    <p>Discover trusted online sources for ADHD knowledge, advocacy, and community.</p>
+  </section>
+
+  <section style="max-width:900px; margin:40px auto; padding:20px;">
+    <div class="feature-card" style="text-align:left;">
+      <ul style="list-style:none; padding:0;">
+        <li><a href="https://adhdfoundation.org.uk/" target="_blank">ADHD Foundation (UK)</a> – National charity providing education, research, and support.</li>
+        <li><a href="https://add.org/" target="_blank">ADD.org</a> – Global ADHD community offering resources and events.</li>
+        <li><a href="https://youngminds.org.uk/" target="_blank">Young Minds</a> – Support for young people’s mental health and wellbeing.</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="social-icons">
+      <a href="#"><img src="images/instagramicon.png" alt="Instagram" class="social-icon-img"></a>
+      <a href="#"><img src="images/tiktokicon.png" alt="TikTok" class="social-icon-img"></a>
+      <a href="#"><img src="images/youtubeicon.png" alt="YouTube" class="social-icon-img"></a>
+    </div>
+    <div class="footer-links">
+      <a href="privacy.html">Privacy Policy</a> | 
+      <a href="disclaimer.html">Disclaimer</a>
+    </div>
+    <p>© 2025 Mads ADHD. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.querySelector('.nav-toggle').addEventListener('click', () => {
+      document.querySelector('.nav-links').classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
