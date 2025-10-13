@@ -4,18 +4,69 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ADHD A–Z Glossary - Mads ADHD</title>
+
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="style.css">
-</head>
-<body>
 
+  <style>
+    /* ===== Glossary Styles ===== */
+    .glossary-container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px 60px;
+    }
+
+    .az-nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 8px;
+      margin: 20px 0 40px;
+    }
+    .az-nav a {
+      color: var(--coral);
+      font-weight: 600;
+      text-decoration: none;
+      border: 1px solid var(--coral);
+      border-radius: 4px;
+      padding: 6px 10px;
+      transition: all 0.2s ease;
+    }
+    .az-nav a:hover {
+      background: var(--coral);
+      color: #fff;
+    }
+
+    .glossary-section h3 {
+      color: var(--coral);
+      font-size: 1.6rem;
+      margin-top: 40px;
+      margin-bottom: 10px;
+      border-bottom: 2px solid #f1f1f1;
+      padding-bottom: 4px;
+    }
+
+    .glossary-section p {
+      margin-bottom: 14px;
+      line-height: 1.6;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- ===== Header ===== -->
   <header class="site-header">
     <a href="index.html">
       <img src="images/logo.png" alt="Mads ADHD Logo" class="site-logo">
     </a>
   </header>
 
+  <!-- ===== Navigation ===== -->
   <nav class="main-nav">
     <button class="nav-toggle">☰</button>
     <ul class="nav-links">
@@ -26,23 +77,50 @@
     </ul>
   </nav>
 
+  <!-- ===== Page Heading ===== -->
   <section class="simple-heading">
     <h2>ADHD A–Z Glossary</h2>
-    <p>Clear, easy-to-understand definitions of ADHD-related terms.</p>
+    <p>Explore clear, easy-to-understand definitions of ADHD-related terms.</p>
   </section>
 
-  <section style="max-width:900px; margin:40px auto; padding:20px;">
-    <div class="feature-card" style="text-align:left;">
-      <h3>A – Attention</h3>
-      <p>The ability to focus on a task or activity without being easily distracted.</p>
-
-      <h3>B – Burnout</h3>
-      <p>A state of emotional, mental, and physical exhaustion often linked to prolonged stress or masking.</p>
-
-      <h3>C – Co-occurring Conditions</h3>
-      <p>Other mental health or neurodevelopmental conditions that can occur alongside ADHD.</p>
+  <!-- ===== A–Z Navigation ===== -->
+  <div class="glossary-container">
+    <div class="az-nav">
+      <a href="#A">A</a><a href="#B">B</a><a href="#C">C</a><a href="#D">D</a><a href="#E">E</a>
+      <a href="#F">F</a><a href="#G">G</a><a href="#H">H</a><a href="#I">I</a><a href="#J">J</a>
+      <a href="#K">K</a><a href="#L">L</a><a href="#M">M</a><a href="#N">N</a><a href="#O">O</a>
+      <a href="#P">P</a><a href="#Q">Q</a><a href="#R">R</a><a href="#S">S</a><a href="#T">T</a>
+      <a href="#U">U</a><a href="#V">V</a><a href="#W">W</a><a href="#X">X</a><a href="#Y">Y</a><a href="#Z">Z</a>
     </div>
-  </section>
+
+    <!-- ===== Glossary Sections ===== -->
+    <div class="glossary-section" id="A">
+      <h3>A</h3>
+      <p><strong>Attention:</strong> The ability to focus on a task or activity without being easily distracted.</p>
+      <p><strong>ADHD:</strong> Attention Deficit Hyperactivity Disorder — a neurodevelopmental condition that affects attention, impulsivity, and activity levels.</p>
+    </div>
+
+    <div class="glossary-section" id="B">
+      <h3>B</h3>
+      <p><strong>Burnout:</strong> A state of emotional, mental, and physical exhaustion often linked to prolonged stress or masking.</p>
+    </div>
+
+    <div class="glossary-section" id="C">
+      <h3>C</h3>
+      <p><strong>Co-occurring Conditions:</strong> Other mental health or neurodevelopmental conditions that can occur alongside ADHD, such as anxiety or dyslexia.</p>
+      <p><strong>Comorbidity:</strong> The presence of two or more conditions in one person at the same time.</p>
+    </div>
+
+    <div class="glossary-section" id="T">
+      <h3>T</h3>
+      <p><strong>Time Blindness:</strong> Difficulty perceiving and managing time effectively, common in ADHD.</p>
+    </div>
+
+    <div class="glossary-section" id="Z">
+      <h3>Z</h3>
+      <p><strong>Zoom Fatigue:</strong> Feeling mentally drained after long video meetings or online interactions — can impact attention and energy.</p>
+    </div>
+  </div>
 
   <!-- ===== Newsletter Signup ===== -->
   <section class="newsletter-signup">
@@ -56,6 +134,7 @@
     </form>
   </section>
 
+  <!-- ===== Footer ===== -->
   <footer class="site-footer">
     <div class="social-icons">
       <a href="#"><img src="images/instagramicon.png" alt="Instagram" class="social-icon-img"></a>
