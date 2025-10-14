@@ -17,22 +17,31 @@
       padding: 0 20px 60px;
     }
 
+    /* ===== A–Z Nav ===== */
     .az-nav {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       gap: 8px;
       margin: 20px 0 40px;
+      background: #fff;
+      position: sticky;
+      top: 0;
+      z-index: 998;
+      padding: 10px 10px 15px;
+      border-bottom: 2px solid #f1f1f1;
     }
+
     .az-nav a {
       color: var(--coral);
       font-weight: 600;
       text-decoration: none;
       border: 1px solid var(--coral);
-      border-radius: 4px;
+      border-radius: 6px;
       padding: 6px 10px;
       transition: all 0.2s ease;
     }
+
     .az-nav a:hover {
       background: var(--coral);
       color: #fff;
@@ -55,6 +64,48 @@
     html {
       scroll-behavior: smooth;
     }
+
+    /* ===== Back to Top Button (Pill Style) ===== */
+    #backToTop {
+      position: fixed;
+      bottom: 30px;
+      right: 25px;
+      background: var(--coral);
+      color: #fff;
+      border: none;
+      border-radius: 30px;
+      padding: 12px 24px;
+      font-size: 1rem;
+      font-weight: 600;
+      font-family: 'Poppins', sans-serif;
+      cursor: pointer;
+      display: none;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+      transition: background 0.3s ease, transform 0.3s ease, opacity 0.3s ease;
+      z-index: 999;
+    }
+
+    #backToTop:hover {
+      background: #ff8c7d;
+      transform: translateY(-2px);
+    }
+
+    /* Adjust spacing so sticky bar doesn’t overlap heading */
+    .simple-heading {
+      padding-bottom: 0;
+      margin-bottom: 0;
+    }
+
+    @media (max-width: 600px) {
+      .az-nav {
+        gap: 5px;
+        padding: 8px;
+      }
+      .az-nav a {
+        font-size: 0.9rem;
+        padding: 5px 8px;
+      }
+    }
   </style>
 </head>
 
@@ -72,24 +123,7 @@
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About Us</a></li>
-       <li class="dropdown">
-        <a href="#" class="dropdown-toggle">
-          Information and Support <i class="fa-solid fa-caret-down arrow"></i>
-        </a>
-        <ul class="dropdown-menu">
-          <li><a href="living.html">Living with ADHD</a></li>
-          <li><a href="parents.html">Parents & Families</a></li>
-          <li><a href="workplace.html">Workplace & Career</a></li>
-          <li><a href="health.html">Health & Hormones</a></li>
-          <li><a href="medication.html">Medication & Alternatives</a></li>
-          <li><a href="positives.html">Positives of ADHD</a></li>
-          <li><a href="challenges.html">Challenges of ADHD</a></li>
-          <li><a href="advocacy.html">Advocacy & Confidence</a></li>
-          <li><a href="diagnosis.html">Diagnosis & Undiagnosis</a></li>
-          <li><a href="science.html">The Science</a></li>
-          <li><a href="lovedones.html">A MSG to Loved Ones</a></li>
-        </ul>
-      </li>
+      <li><a href="information_and_support.html">Information & Support</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
   </nav>
@@ -100,8 +134,8 @@
     <p>Explore clear, easy-to-understand definitions of ADHD-related terms.</p>
   </section>
 
-  <!-- ===== A–Z Navigation ===== -->
-  <div class="glossary-container">
+  <!-- ===== Glossary ===== -->
+  <div class="glossary-container" id="top">
     <div class="az-nav">
       <a href="#A">A</a><a href="#B">B</a><a href="#C">C</a><a href="#D">D</a><a href="#E">E</a>
       <a href="#F">F</a><a href="#G">G</a><a href="#H">H</a><a href="#I">I</a><a href="#J">J</a>
@@ -110,158 +144,141 @@
       <a href="#U">U</a><a href="#V">V</a><a href="#W">W</a><a href="#X">X</a><a href="#Y">Y</a><a href="#Z">Z</a>
     </div>
 
-    <!-- ===== Glossary Sections ===== -->
+    <!-- ===== Sections (A–Z) ===== -->
     <div class="glossary-section" id="A">
       <h3>A</h3>
-      <p><strong>Attention:</strong> The ability to focus on a task or activity without being easily distracted.</p>
-      <p><strong>ADHD:</strong> Attention Deficit Hyperactivity Disorder — a neurodevelopmental condition that affects attention, impulsivity, and activity levels.</p>
+      <p><strong>ADHD:</strong> Attention Deficit Hyperactivity Disorder — a neurodevelopmental condition affecting attention, impulsivity, and energy regulation.</p>
+      <p><strong>Attention:</strong> The ability to focus on a task without being easily distracted.</p>
     </div>
 
     <div class="glossary-section" id="B">
       <h3>B</h3>
-      <p><strong>Burnout:</strong> A state of emotional, mental, and physical exhaustion often linked to prolonged stress or masking.</p>
+      <p><strong>Burnout:</strong> Emotional, physical, and mental exhaustion caused by prolonged stress or masking.</p>
     </div>
 
     <div class="glossary-section" id="C">
       <h3>C</h3>
-      <p><strong>Co-occurring Conditions:</strong> Other mental health or neurodevelopmental conditions that can occur alongside ADHD, such as anxiety or dyslexia.</p>
-      <p><strong>Comorbidity:</strong> The presence of two or more conditions in one person at the same time.</p>
+      <p><strong>Comorbidity:</strong> When ADHD occurs alongside another condition such as anxiety, depression, or autism.</p>
     </div>
 
-       <div class="glossary-section" id="D">
+    <div class="glossary-section" id="D">
       <h3>D</h3>
-      <p><strong>Co-occurring Conditions:</strong> Other mental health or neurodevelopmental conditions that can occur alongside ADHD, such as anxiety or dyslexia.</p>
-      <p><strong>Comorbidity:</strong> The presence of two or more conditions in one person at the same time.</p>
+      <p><strong>Dopamine:</strong> A neurotransmitter linked to motivation and reward, often imbalanced in ADHD.</p>
     </div>
 
-          <div class="glossary-section" id="E">
+    <div class="glossary-section" id="E">
       <h3>E</h3>
-      <p><strong>Co-occurring Conditions:</strong> Other mental health or neurodevelopmental conditions that can occur alongside ADHD, such as anxiety or dyslexia.</p>
-      <p><strong>Comorbidity:</strong> The presence of two or more conditions in one person at the same time.</p>
+      <p><strong>Executive Function:</strong> Mental processes that help with planning, prioritizing, and completing tasks — often affected in ADHD.</p>
     </div>
 
-          <div class="glossary-section" id="F">
+    <div class="glossary-section" id="F">
       <h3>F</h3>
-      <p><strong>Co-occurring Conditions:</strong> Other mental health or neurodevelopmental conditions that can occur alongside ADHD, such as anxiety or dyslexia.</p>
-      <p><strong>Comorbidity:</strong> The presence of two or more conditions in one person at the same time.</p>
+      <p><strong>Focus:</strong> The ability to maintain attention on a single task, which may fluctuate in ADHD.</p>
     </div>
 
-          <div class="glossary-section" id="G">
+    <div class="glossary-section" id="G">
       <h3>G</h3>
-      <p><strong>Co-occurring Conditions:</strong> Other mental health or neurodevelopmental conditions that can occur alongside ADHD, such as anxiety or dyslexia.</p>
-      <p><strong>Comorbidity:</strong> The presence of two or more conditions in one person at the same time.</p>
+      <p><strong>Goal Paralysis:</strong> Feeling stuck or unable to begin a task because it feels too overwhelming.</p>
     </div>
 
-          <div class="glossary-section" id="H">
+    <div class="glossary-section" id="H">
       <h3>H</h3>
-      <p><strong>Co-occurring Conditions:</strong> Other mental health or neurodevelopmental conditions that can occur alongside ADHD, such as anxiety or dyslexia.</p>
-      <p><strong>Comorbidity:</strong> The presence of two or more conditions in one person at the same time.</p>
+      <p><strong>Hyperfocus:</strong> Intense concentration on a specific task or interest, sometimes for hours at a time.</p>
     </div>
 
-          <div class="glossary-section" id="I">
+    <div class="glossary-section" id="I">
       <h3>I</h3>
-      <p><strong>Co-occurring Conditions:</strong> Other mental health or neurodevelopmental conditions that can occur alongside ADHD, such as anxiety or dyslexia.</p>
-      <p><strong>Comorbidity:</strong> The presence of two or more conditions in one person at the same time.</p>
+      <p><strong>Impulsivity:</strong> Acting quickly without considering consequences, often driven by strong emotions or excitement.</p>
     </div>
 
-         <div class="glossary-section" id="J">
+    <div class="glossary-section" id="J">
       <h3>J</h3>
-      <p><strong>Co-occurring Conditions:</strong> Other mental health or neurodevelopmental conditions that can occur alongside ADHD, such as anxiety or dyslexia.</p>
-      <p><strong>Comorbidity:</strong> The presence of two or more conditions in one person at the same time.</p>
+      <p><strong>Journaling:</strong> A reflective writing practice that can support emotional regulation and self-awareness.</p>
     </div>
 
-         <div class="glossary-section" id="K">
+    <div class="glossary-section" id="K">
       <h3>K</h3>
-      <p><strong>Co-occurring Conditions:</strong> Other mental health or neurodevelopmental conditions that can occur alongside ADHD, such as anxiety or dyslexia.</p>
-      <p><strong>Comorbidity:</strong> The presence of two or more conditions in one person at the same time.</p>
+      <p><strong>Kickstart Strategy:</strong> A method to help initiate tasks, such as using timers or body doubling.</p>
     </div>
 
-      <div class="glossary-section" id="L">
+    <div class="glossary-section" id="L">
       <h3>L</h3>
-      <p><strong>Co-occurring Conditions:</strong> Other mental health or neurodevelopmental conditions that can occur alongside ADHD, such as anxiety or dyslexia.</p>
-      <p><strong>Comorbidity:</strong> The presence of two or more conditions in one person at the same time.</p>
+      <p><strong>Low Frustration Tolerance:</strong> Becoming easily overwhelmed when tasks feel difficult or delayed.</p>
     </div>
 
-      <div class="glossary-section" id="M">
+    <div class="glossary-section" id="M">
       <h3>M</h3>
-      <p><strong>Co-occurring Conditions:</strong> Other mental health or neurodevelopmental conditions that can occur alongside ADHD, such as anxiety or dyslexia.</p>
-      <p><strong>Comorbidity:</strong> The presence of two or more conditions in one person at the same time.</p>
+      <p><strong>Masking:</strong> Concealing ADHD traits to fit social expectations, often leading to exhaustion.</p>
     </div>
 
-      <div class="glossary-section" id="N">
+    <div class="glossary-section" id="N">
       <h3>N</h3>
-      <p><strong>Co-occurring Conditions:</strong> Other mental health or neurodevelopmental conditions that can occur alongside ADHD, such as anxiety or dyslexia.</p>
-      <p><strong>Comorbidity:</strong> The presence of two or more conditions in one person at the same time.</p>
+      <p><strong>Neurodivergent:</strong> A term for people whose brain wiring differs from the neurotypical norm.</p>
     </div>
 
-          <div class="glossary-section" id="O">
+    <div class="glossary-section" id="O">
       <h3>O</h3>
-      <p><strong>Co-occurring Conditions:</strong> Other mental health or neurodevelopmental conditions that can occur alongside ADHD, such as anxiety or dyslexia.</p>
-      <p><strong>Comorbidity:</strong> The presence of two or more conditions in one person at the same time.</p>
+      <p><strong>Overstimulation:</strong> Feeling overwhelmed by excessive sensory input like noise, light, or activity.</p>
     </div>
 
-      <div class="glossary-section" id="P">
+    <div class="glossary-section" id="P">
       <h3>P</h3>
-      <p><strong>Co-occurring Conditions:</strong> Other mental health or neurodevelopmental conditions that can occur alongside ADHD, such as anxiety or dyslexia.</p>
-      <p><strong>Comorbidity:</strong> The presence of two or more conditions in one person at the same time.</p>
+      <p><strong>Procrastination:</strong> Delaying tasks due to executive dysfunction, perfectionism, or task paralysis.</p>
     </div>
 
-      <div class="glossary-section" id="Q">
+    <div class="glossary-section" id="Q">
       <h3>Q</h3>
-      <p><strong>Co-occurring Conditions:</strong> Other mental health or neurodevelopmental conditions that can occur alongside ADHD, such as anxiety or dyslexia.</p>
-      <p><strong>Comorbidity:</strong> The presence of two or more conditions in one person at the same time.</p>
+      <p><strong>Quiet Rest:</strong> Taking intentional downtime to reset sensory and emotional overload.</p>
     </div>
 
-         <div class="glossary-section" id="R">
+    <div class="glossary-section" id="R">
       <h3>R</h3>
-      <p><strong>Co-occurring Conditions:</strong> Other mental health or neurodevelopmental conditions that can occur alongside ADHD, such as anxiety or dyslexia.</p>
-      <p><strong>Comorbidity:</strong> The presence of two or more conditions in one person at the same time.</p>
+      <p><strong>Rejection Sensitive Dysphoria (RSD):</strong> Intense emotional response to perceived criticism or rejection.</p>
     </div>
 
-         <div class="glossary-section" id="S">
+    <div class="glossary-section" id="S">
       <h3>S</h3>
-      <p><strong>Co-occurring Conditions:</strong> Other mental health or neurodevelopmental conditions that can occur alongside ADHD, such as anxiety or dyslexia.</p>
-      <p><strong>Comorbidity:</strong> The presence of two or more conditions in one person at the same time.</p>
+      <p><strong>Stimming:</strong> Repetitive movements or actions that help self-regulate or focus.</p>
     </div>
-    
+
     <div class="glossary-section" id="T">
       <h3>T</h3>
-      <p><strong>Time Blindness:</strong> Difficulty perceiving and managing time effectively, common in ADHD.</p>
+      <p><strong>Time Blindness:</strong> Difficulty sensing or managing the passage of time accurately.</p>
     </div>
 
-         <div class="glossary-section" id="U">
+    <div class="glossary-section" id="U">
       <h3>U</h3>
-      <p><strong>Co-occurring Conditions:</strong> Other mental health or neurodevelopmental conditions that can occur alongside ADHD, such as anxiety or dyslexia.</p>
-      <p><strong>Comorbidity:</strong> The presence of two or more conditions in one person at the same time.</p>
+      <p><strong>Understimulation:</strong> Lack of mental engagement causing boredom or restlessness.</p>
     </div>
 
-         <div class="glossary-section" id="V">
+    <div class="glossary-section" id="V">
       <h3>V</h3>
-      <p><strong>Co-occurring Conditions:</strong> Other mental health or neurodevelopmental conditions that can occur alongside ADHD, such as anxiety or dyslexia.</p>
-      <p><strong>Comorbidity:</strong> The presence of two or more conditions in one person at the same time.</p>
+      <p><strong>Visual Cues:</strong> Using color or visuals to aid memory and structure tasks.</p>
     </div>
-    
+
     <div class="glossary-section" id="W">
       <h3>W</h3>
-      <p><strong>Time Blindness:</strong> Difficulty perceiving and managing time effectively, common in ADHD.</p>
+      <p><strong>Working Memory:</strong> The ability to hold information briefly for use — often weaker in ADHD.</p>
     </div>
 
-        <div class="glossary-section" id="X">
+    <div class="glossary-section" id="X">
       <h3>X</h3>
-      <p><strong>Co-occurring Conditions:</strong> Other mental health or neurodevelopmental conditions that can occur alongside ADHD, such as anxiety or dyslexia.</p>
-      <p><strong>Comorbidity:</strong> The presence of two or more conditions in one person at the same time.</p>
+      <p><strong>X-Factor:</strong> A unique creativity or intuition often seen in ADHD minds.</p>
     </div>
-    
+
     <div class="glossary-section" id="Y">
       <h3>Y</h3>
-      <p><strong>Time Blindness:</strong> Difficulty perceiving and managing time effectively, common in ADHD.</p>
+      <p><strong>Yielding:</strong> Learning to rest and pace energy instead of pushing through fatigue.</p>
     </div>
 
     <div class="glossary-section" id="Z">
       <h3>Z</h3>
-      <p><strong>Zoom Fatigue:</strong> Feeling mentally drained after long video meetings or online interactions — can impact attention and energy.</p>
+      <p><strong>Zone of Focus:</strong> The ideal balance between distraction and hyperfocus where attention flows naturally.</p>
     </div>
   </div>
+
+  <!-- ===== Back to Top Button ===== -->
+  <button id="backToTop" title="Back to Top">Back to Top ↑</button>
 
   <!-- ===== Newsletter Signup ===== -->
   <section class="newsletter-signup">
@@ -290,8 +307,24 @@
   </footer>
 
   <script>
+    // Mobile nav toggle
     document.querySelector('.nav-toggle').addEventListener('click', () => {
       document.querySelector('.nav-links').classList.toggle('active');
+    });
+
+    // Back to Top button
+    const backToTop = document.getElementById('backToTop');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 400) {
+        backToTop.style.display = 'block';
+        backToTop.style.opacity = '1';
+      } else {
+        backToTop.style.opacity = '0';
+        backToTop.style.display = 'none';
+      }
+    });
+    backToTop.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     });
   </script>
 </body>
