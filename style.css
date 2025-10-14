@@ -607,3 +607,16 @@ body.homepage .newsletter-signup::before {
     font-size: 0.9rem;
   }
 }
+
+/* ===== HOMEPAGE CARD LAYOUT FIX ===== */
+body.index-page .features {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  body.index-page .features {
+    grid-template-columns: 1fr; /* stack one per row on mobile */
+  }
+}
