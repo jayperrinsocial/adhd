@@ -218,3 +218,58 @@ hr {
     width: 100%;
   }
 }
+
+/* --- Mads ADHD Branding Overrides --- */
+
+/* Forum main banner/header background */
+#banner {
+  background: #FF6F61 !important; /* Coral */
+  color: #fff !important;
+  padding: 20px 0;
+  text-align: center;
+  font-weight: 700;
+  font-size: 28px;
+  letter-spacing: 0.5px;
+}
+
+/* Section titles (like “General”, “Moderators”) */
+.container > .title-bar,
+.title-bar {
+  background: #A8E6CF !important; /* Mint */
+  color: #2C2C2C !important;      /* Dark text for contrast */
+  font-weight: 600;
+  border-radius: 8px 8px 0 0;
+  padding: 8px 12px;
+  border: none;
+}
+
+/* Thread/board rows background tweaks */
+.board,
+.thread,
+.post {
+  background-color: #fff !important;
+  border-radius: 6px;
+  border: 1px solid #eee;
+}
+
+/* Links hover styling */
+a:hover {
+  color: #FF6F61 !important;
+  text-decoration: underline;
+}
+
+/* Navigation bar (Home, Help, etc.) */
+#navigation-menu {
+  background: #FFD54F !important; /* Yellow highlight */
+  border-bottom: 2px solid #FF6F61;
+}
+
+#navigation-menu a {
+  color: #2C2C2C !important;
+  font-weight: 600;
+}
+
+#navigation-menu a:hover {
+  color: #FF6F61 !important;
+}
+
