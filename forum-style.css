@@ -286,8 +286,13 @@ a:hover {
 
 /* Adjust banner container */
 #banner-container {
-  background: var(--coral);
+  background: #FF6F61; /* Coral */
   padding: 20px 0;
   text-align: center;
-  border-bottom: 4px solid var(--mint);
+  border-bottom: 4px solid #A8E6CF; /* Mint */
+}
+
+/* Hide default text banner */
+#banner h1, #banner h2, #banner span, #banner p {
+  display: none !important;
 }
