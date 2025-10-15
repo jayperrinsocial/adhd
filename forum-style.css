@@ -1,0 +1,220 @@
+/* ============================================================
+   MADS ADHD PROBOARDS THEME (external version)
+   Matches the look and feel of madsadhd.co.uk
+   Author: Jay Perrin
+   ============================================================ */
+
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+/* --- Base Colours --- */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #FFFFFF;
+  color: #2C2C2C;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* --- Header --- */
+#header {
+  background: #A8E6CF; /* mint */
+  text-align: center;
+  padding: 20px 0;
+  border-bottom: 4px solid #FF6F61; /* coral */
+}
+#header h1, #header a {
+  color: #2C2C2C;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+/* --- Navigation --- */
+#navigation {
+  background: #FFFFFF;
+  border-top: 1px solid #EEE;
+  border-bottom: 1px solid #EEE;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 12px 0;
+}
+#navigation a {
+  color: #2C2C2C;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 8px;
+  transition: color 0.2s ease;
+}
+#navigation a:hover {
+  color: #FF6F61;
+}
+
+/* --- Forum Wrapper --- */
+#wrapper, #content {
+  max-width: 1200px;
+  margin: 30px auto;
+  background: #FFFFFF;
+  border-radius: 12px;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.08);
+  padding: 20px;
+}
+
+/* --- Boards --- */
+.container, .board {
+  background: #FFFFFF;
+  border-radius: 12px;
+  border: 1px solid #EEE;
+  margin-bottom: 20px;
+  overflow: hidden;
+  transition: all 0.2s ease;
+}
+.container:hover, .board:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.1);
+}
+.title-bar {
+  background: #FF6F61;
+  color: #FFFFFF;
+  padding: 12px 20px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  border-radius: 12px 12px 0 0;
+}
+.board .content {
+  padding: 16px 20px;
+}
+
+/* --- Threads --- */
+.thread, .post {
+  border-bottom: 1px solid #EEE;
+  padding: 15px;
+}
+.thread:last-child, .post:last-child {
+  border-bottom: none;
+}
+.thread .subject a, .post .subject a {
+  color: #FF6F61;
+  text-decoration: none;
+  font-weight: 600;
+}
+.thread .subject a:hover, .post .subject a:hover {
+  text-decoration: underline;
+}
+
+/* --- Buttons --- */
+button, .button, input[type="submit"], input[type="button"] {
+  background: #FF6F61;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 30px;
+  padding: 10px 24px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+button:hover, .button:hover, input[type="submit"]:hover, input[type="button"]:hover {
+  background: #E65B50;
+}
+
+/* --- Links --- */
+a {
+  color: #FF6F61;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* --- Tables --- */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th {
+  background: #A8E6CF;
+  color: #2C2C2C;
+  text-align: left;
+  padding: 10px;
+  border-bottom: 2px solid #FF6F61;
+}
+td {
+  padding: 10px;
+  border-bottom: 1px solid #EEE;
+}
+
+/* --- Pagination --- */
+.pagination a, .pagination span {
+  display: inline-block;
+  padding: 8px 14px;
+  border-radius: 20px;
+  margin: 2px;
+  background: #F9F9F9;
+  color: #2C2C2C;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+.pagination a:hover {
+  background: #A8E6CF;
+}
+.pagination .current {
+  background: #FF6F61;
+  color: #FFFFFF;
+  font-weight: 600;
+}
+
+/* --- Footer --- */
+#footer {
+  background: #A8E6CF;
+  text-align: center;
+  padding: 15px 10px;
+  color: #2C2C2C;
+  border-top: 4px solid #FF6F61;
+}
+#footer a {
+  color: #FF6F61;
+  text-decoration: none;
+  font-weight: 600;
+}
+#footer a:hover {
+  text-decoration: underline;
+}
+
+/* --- Post Styling --- */
+blockquote {
+  background: #FFF7F6;
+  border-left: 5px solid #FF6F61;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-style: italic;
+}
+code {
+  background: #F7F7F7;
+  padding: 3px 6px;
+  border-radius: 4px;
+  font-family: monospace;
+  color: #2C2C2C;
+}
+
+/* --- Misc --- */
+hr {
+  border: none;
+  border-top: 1px solid #EEE;
+  margin: 25px 0;
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+  #navigation {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  #wrapper, #content {
+    padding: 15px;
+  }
+  button, .button {
+    width: 100%;
+  }
+}
