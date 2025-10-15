@@ -77,7 +77,7 @@ body {
 }
 .title-bar {
   background: #FF6F61;
-  color: #FFFFFF;
+  color: #000000;
   padding: 12px 20px;
   font-weight: 600;
   font-size: 1.1rem;
@@ -260,7 +260,7 @@ a:hover {
 
 /* Navigation bar (Home, Help, etc.) */
 #navigation-menu {
-  background: #FFD54F !important; /* Yellow highlight */
+  background: #FFD54F !important; /* yellow highlight */
   border-bottom: 2px solid #FF6F61;
 }
 
