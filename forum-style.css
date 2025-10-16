@@ -72,7 +72,6 @@ body {
   transition: all 0.2s ease;
 }
 .container:hover, .board:hover {
- 
   box-shadow: 0 12px 24px rgba(0,0,0,0.1);
 }
 .title-bar {
@@ -236,7 +235,7 @@ hr {
 .container > .title-bar,
 .title-bar {
   background: #FF6F61 !important; /* Coral */
-  color: #2C2C2C !important;      /* Dark text for contrast */
+  color: #2C2C2C !important;
   font-weight: 600;
   border-radius: 8px 8px 0 0;
   padding: 8px 12px;
@@ -260,8 +259,10 @@ a:hover {
 
 /* Navigation bar (Home, Help, etc.) */
 #navigation-menu {
-  background: #FFD54F !important; /* yellow highlight */
+  background: #FFD54F !important; /* Yellow highlight */
   border-bottom: 2px solid #FF6F61;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 #navigation-menu a {
@@ -274,82 +275,13 @@ a:hover {
 }
 
 /* --- Forum Banner --- */
-.forum-banner {
-  width: 100%;
-  max-width: 1000px;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-
-/* Adjust banner container */
 #banner-container {
-  background: #FF6F61; /* Coral */
-  padding: 20px 0;
-  text-align: center;
-  border-bottom: 4px solid #A8E6CF; /* Mint */
-}
-
-/* Hide default text banner */
-#banner h1, #banner h2, #banner span, #banner p {
-  display: none !important;
-}
-
-/* Hide default forum title text */
-#banner h1, 
-#banner h2, 
-#banner span, 
-#banner p, 
-#banner {
-  text-indent: -9999px;
-  overflow: hidden;
-  height: auto;
-  position: relative;
-}
-
-/* --- Create Thread & Action Buttons (mint variant) --- */
-.button,
-input[type="button"],
-input[type="submit"],
-input[type="reset"],
-a.button {
-  background-color: #A8E6CF !important; /* Mint */
-  color: #2C2C2C !important;           /* Dark text for readability */
-  border: none !important;
-  border-radius: 30px !important;
-  padding: 8px 16px !important;
-  font-weight: 600 !important;
-  text-transform: none;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  transition: all 0.2s ease-in-out;
-}
-
-/* Hover effect */
-.button:hover,
-input[type="button"]:hover,
-input[type="submit"]:hover,
-a.button:hover {
-  background-color: #8FDABF !important; /* slightly darker mint */
-  color: #000000 !important;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
-}
-
-/* Active/focused state */
-.button:active,
-input[type="button"]:active,
-a.button:active {
-  background-color: #7ECFB2 !important;
-  transform: translateY(1px);
-}
-
-/* --- Banner centering & spacing fix --- */
-#banner-container {
-  background: #FF6F61; /* coral background */
+  background: #FF6F61; /* Coral background */
   display: flex;
   justify-content: center;
+  align-items: center;
   padding: 20px 0;
+  border-bottom: 4px solid #A8E6CF; /* Mint divider line */
 }
 
 .banner-inner {
@@ -360,8 +292,48 @@ a.button:active {
 
 .forum-banner {
   width: 100%;
+  max-width: 1000px;
   height: auto;
   border-radius: 10px;
   display: block;
   margin: 0 auto;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Hide default text banner */
+#banner h1, #banner h2, #banner span, #banner p {
+  display: none !important;
+}
+
+/* --- Create Thread & Action Buttons (mint variant) --- */
+.button,
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+a.button {
+  background-color: #A8E6CF !important; /* Mint */
+  color: #2C2C2C !important;
+  border: none !important;
+  border-radius: 30px !important;
+  padding: 8px 16px !important;
+  font-weight: 600 !important;
+  text-transform: none;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: all 0.2s ease-in-out;
+}
+
+.button:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover,
+a.button:hover {
+  background-color: #8FDABF !important;
+  color: #000000 !important;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.button:active,
+input[type="button"]:active,
+a.button:active {
+  background-color: #7ECFB2 !important;
+  transform: translateY(1px);
 }
