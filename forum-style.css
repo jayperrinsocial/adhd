@@ -404,3 +404,35 @@ a.button:active {
   margin-bottom: 20px;
 }
 
+/* --- Absolute fix for welcome message alignment --- */
+#forumtitle,
+#forumtitle + .content,
+#forumtitle + .content .container,
+#forumtitle + .content .container .content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+  display: block;
+}
+
+/* Style the welcome/intro text nicely */
+#forumtitle + .content {
+  background: #FFF7F6;
+  border: 1px solid #FFD54F;
+  border-left: 5px solid #FF6F61;
+  border-radius: 8px;
+  padding: 12px 16px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  color: #2C2C2C;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* Prevent the intro message from touching the edges on mobile */
+@media (max-width: 768px) {
+  #forumtitle + .content {
+    margin: 10px;
+  }
+}
