@@ -493,3 +493,29 @@ body > .container,
   line-height: 1.5;
 }
 
+/* --- TRUE FIX: Center and style the welcome message & breadcrumb section --- */
+#navigation-tree + .content,
+#navigation-tree + .container,
+#navigation-tree + div,
+#navigation-tree + p {
+  max-width: 1200px !important;
+  margin: 0 auto 20px auto !important;
+  padding: 12px 16px !important;
+  box-sizing: border-box;
+  display: block;
+  background: #FFF7F6;
+  border: 1px solid #FFD54F;
+  border-left: 5px solid #FF6F61;
+  border-radius: 8px;
+  color: #2C2C2C;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* Keep breadcrumb trail centred too */
+#navigation-tree {
+  max-width: 1200px !important;
+  margin: 10px auto !important;
+  padding: 0 16px !important;
+  box-sizing: border-box;
+}
