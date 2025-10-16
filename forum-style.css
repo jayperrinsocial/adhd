@@ -345,3 +345,38 @@ a.button:active {
   margin: 0 auto;
 }
 
+/* --- Navigation tree & announcement centering fix --- */
+#navigation-tree,
+#announcement,
+.notice,
+.breadcrumbs {
+  max-width: 1200px;        /* match wrapper */
+  margin: 0 auto;           /* center horizontally */
+  display: block;
+  padding: 0 20px;          /* add even side breathing space */
+  box-sizing: border-box;
+}
+
+/* Make the announcement bar visually match the design */
+#announcement, .notice {
+  background: #FFF7F6;
+  border: 1px solid #FFD54F;
+  border-left: 5px solid #FF6F61;
+  border-radius: 8px;
+  padding: 10px 15px;
+  margin-top: 10px;
+  color: #2C2C2C;
+  font-size: 0.95rem;
+}
+
+/* Ensure breadcrumb links (the Mads ADHD > Home trail) align nicely */
+#navigation-tree a {
+  color: #2C2C2C;
+  text-decoration: none;
+  font-weight: 600;
+}
+#navigation-tree a:hover {
+  color: #FF6F61;
+  text-decoration: underline;
+}
+
