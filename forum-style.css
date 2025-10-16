@@ -344,3 +344,24 @@ a.button:active {
   transform: translateY(1px);
 }
 
+/* --- Banner centering & spacing fix --- */
+#banner-container {
+  background: #FF6F61; /* coral background */
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.banner-inner {
+  max-width: 1200px; /* match forum width */
+  width: 100%;
+  text-align: center;
+}
+
+.forum-banner {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+}
