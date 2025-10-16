@@ -469,3 +469,27 @@ a.button:active {
   }
 }
 
+/* --- Universal centering for all top-level containers --- */
+body > .container,
+#wrapper > .container,
+#welcome,
+.forum-welcome {
+  max-width: 1200px !important;
+  margin: 0 auto 20px auto !important;
+  padding: 12px 16px !important;
+  box-sizing: border-box;
+  display: block;
+}
+
+/* Style the welcome message visually */
+#welcome,
+.forum-welcome {
+  background: #A8E6CF1A; /* very light mint tint */
+  border: 1px solid #A8E6CF;
+  border-left: 5px solid #FF6F61;
+  border-radius: 8px;
+  color: #2C2C2C;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
