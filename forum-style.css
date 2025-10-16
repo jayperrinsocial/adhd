@@ -308,3 +308,39 @@ a:hover {
   height: auto;
   position: relative;
 }
+
+/* --- Create Thread & Action Buttons (mint variant) --- */
+.button,
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+a.button {
+  background-color: #A8E6CF !important; /* Mint */
+  color: #2C2C2C !important;           /* Dark text for readability */
+  border: none !important;
+  border-radius: 30px !important;
+  padding: 8px 16px !important;
+  font-weight: 600 !important;
+  text-transform: none;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: all 0.2s ease-in-out;
+}
+
+/* Hover effect */
+.button:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover,
+a.button:hover {
+  background-color: #8FDABF !important; /* slightly darker mint */
+  color: #000000 !important;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+/* Active/focused state */
+.button:active,
+input[type="button"]:active,
+a.button:active {
+  background-color: #7ECFB2 !important;
+  transform: translateY(1px);
+}
+
