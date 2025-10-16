@@ -380,3 +380,27 @@ a.button:active {
   text-decoration: underline;
 }
 
+/* --- Final centering fix for welcome/announcement text --- */
+#content > .container:first-of-type,
+#content > .container:first-of-type .content {
+  max-width: 1200px;       /* Match forum wrapper width */
+  margin: 0 auto;
+  display: block;
+  padding: 0 20px;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+/* Optional: visually tidy the welcome message */
+#content > .container:first-of-type .content {
+  background: #FFF7F6;
+  border: 1px solid #FFD54F;
+  border-left: 5px solid #FF6F61;
+  border-radius: 8px;
+  padding: 12px 16px;
+  color: #2C2C2C;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
