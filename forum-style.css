@@ -436,3 +436,36 @@ a.button:active {
     margin: 10px;
   }
 }
+
+/* --- FINAL FIX: Center and style the welcome text --- */
+#welcome,
+.forum-welcome,
+#welcome-container,
+#welcome-message {
+  max-width: 1200px;
+  margin: 0 auto 20px auto;
+  padding: 12px 16px;
+  box-sizing: border-box;
+  background: #FFF7F6;
+  border: 1px solid #FFD54F;
+  border-left: 5px solid #FF6F61;
+  border-radius: 8px;
+  color: #2C2C2C;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  text-align: left;
+  display: block;
+}
+
+/* Keep spacing consistent */
+#welcome br {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  #welcome,
+  .forum-welcome {
+    margin: 10px;
+  }
+}
+
