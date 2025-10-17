@@ -519,3 +519,18 @@ body > .container,
   padding: 0 16px !important;
   box-sizing: border-box;
 }
+
+/* Centered forum intro / welcome message */
+.forum-intro-wrap {
+  max-width: 1200px;
+  margin: 0 auto 16px auto;
+  padding: 12px 16px;
+  box-sizing: border-box;
+  background: #FFF7F6;
+  border: 1px solid #FFD54F;
+  border-left: 5px solid #FF6F61;
+  border-radius: 8px;
+  color: #2C2C2C;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
