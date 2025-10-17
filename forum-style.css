@@ -534,3 +534,25 @@ body > .container,
   font-size: 0.95rem;
   line-height: 1.5;
 }
+
+/* --- Navigation bar height fix --- */
+#navigation-menu {
+  padding: 6px 0 !important;  /* reduces vertical space */
+  line-height: 1.2 !important; /* tightens inner text spacing */
+  background: #FFD54F !important; /* keep gold colour */
+  border-bottom: 2px solid #FF6F61;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Optional: slightly shrink the links to match */
+#navigation-menu a {
+  padding: 4px 8px !important;
+  font-size: 0.95rem !important;
+}
+
+#welcome {
+  padding: 4px 10px !important;
+  font-size: 0.9rem !important;
+}
+
