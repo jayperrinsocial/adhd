@@ -13,6 +13,33 @@
 
   <!-- Main stylesheet -->
   <link rel="stylesheet" href="style.css?v=6">
+
+  <style>
+    /* Local tweaks specific to Diagnosis page */
+    .diagnosis-list a {
+      color: var(--coral);
+      text-decoration: none;
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 500;
+    }
+    .diagnosis-list a:hover {
+      text-decoration: underline;
+    }
+    .diagnosis-section {
+      margin-top: 40px;
+      border-top: 1px solid #eee;
+      padding-top: 20px;
+    }
+    .diagnosis-section h3 {
+      color: var(--coral);
+      margin-bottom: 10px;
+    }
+    .diagnosis-section p {
+      color: var(--ink);
+      line-height: 1.6;
+    }
+  </style>
 </head>
 
 <body class="diagnosis-page">
@@ -53,18 +80,69 @@
       Getting an ADHD diagnosis can be a complex and emotional journey. Whether you’re seeking an assessment through the NHS, exploring private options, or supporting a loved one, the process can often feel confusing. Below are some useful starting points and common questions to help you make informed decisions.
     </p>
 
-    <ul style="list-style:none; padding:0; margin-top:25px;">
-      <li><a href="#" style="color:var(--coral); text-decoration:none;">1) How do I start the ball rolling for a diagnosis?</a></li>
-      <li><a href="#" style="color:var(--coral); text-decoration:none;">2) What’s the difference between NHS and private assessments?</a></li>
-      <li><a href="#" style="color:var(--coral); text-decoration:none;">3) How long does the ADHD assessment process take?</a></li>
-      <li><a href="#" style="color:var(--coral); text-decoration:none;">4) What’s involved in an ADHD assessment?</a></li>
-      <li><a href="#" style="color:var(--coral); text-decoration:none;">5) What is the Right to Choose pathway?</a></li>
-      <li><a href="#" style="color:var(--coral); text-decoration:none;">6) Can my GP refuse to refer me for an assessment?</a></li>
-      <li><a href="#" style="color:var(--coral); text-decoration:none;">7) What should I prepare before my appointment?</a></li>
-      <li><a href="#" style="color:var(--coral); text-decoration:none;">8) How does diagnosis differ for women and girls?</a></li>
-      <li><a href="#" style="color:var(--coral); text-decoration:none;">9) What happens after receiving a diagnosis?</a></li>
-      <li><a href="#" style="color:var(--coral); text-decoration:none;">10) What if I’m told I don’t meet the criteria?</a></li>
+    <ul class="diagnosis-list" style="list-style:none; padding:0; margin-top:25px;">
+      <li><a href="#q1">1) How do I start the ball rolling for a diagnosis?</a></li>
+      <li><a href="#q2">2) What’s the difference between NHS and private assessments?</a></li>
+      <li><a href="#q3">3) How long does the ADHD assessment process take?</a></li>
+      <li><a href="#q4">4) What’s involved in an ADHD assessment?</a></li>
+      <li><a href="#q5">5) What is the Right to Choose pathway?</a></li>
+      <li><a href="#q6">6) Can my GP refuse to refer me for an assessment?</a></li>
+      <li><a href="#q7">7) What should I prepare before my appointment?</a></li>
+      <li><a href="#q8">8) How does diagnosis differ for women and girls?</a></li>
+      <li><a href="#q9">9) What happens after receiving a diagnosis?</a></li>
+      <li><a href="#q10">10) What if I’m told I don’t meet the criteria?</a></li>
     </ul>
+
+    <!-- ===== ANCHORED CONTENT SECTIONS ===== -->
+    <div id="q1" class="diagnosis-section">
+      <h3>1) How do I start the ball rolling for a diagnosis?</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus non leo at ligula efficitur sagittis. Cras viverra, orci in malesuada egestas, ante ligula dictum felis, ac sagittis ipsum lorem nec metus.</p>
+    </div>
+
+    <div id="q2" class="diagnosis-section">
+      <h3>2) What’s the difference between NHS and private assessments?</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam congue, mi vitae feugiat tincidunt, justo purus iaculis ante, sit amet tristique augue odio sed ligula.</p>
+    </div>
+
+    <div id="q3" class="diagnosis-section">
+      <h3>3) How long does the ADHD assessment process take?</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fermentum nisl vel libero cursus blandit. Mauris at ligula suscipit, egestas sem ut, gravida lacus.</p>
+    </div>
+
+    <div id="q4" class="diagnosis-section">
+      <h3>4) What’s involved in an ADHD assessment?</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ac massa in magna suscipit aliquet. Duis at volutpat lorem. Integer mattis, ipsum at accumsan sodales, est lorem bibendum justo, sit amet efficitur erat purus sit amet nulla.</p>
+    </div>
+
+    <div id="q5" class="diagnosis-section">
+      <h3>5) What is the Right to Choose pathway?</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempor, ligula in blandit rhoncus, urna orci sodales mauris, nec fermentum est felis ut neque.</p>
+    </div>
+
+    <div id="q6" class="diagnosis-section">
+      <h3>6) Can my GP refuse to refer me for an assessment?</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse in neque sit amet magna volutpat tempor. Sed ullamcorper dapibus leo, sed accumsan risus luctus vel.</p>
+    </div>
+
+    <div id="q7" class="diagnosis-section">
+      <h3>7) What should I prepare before my appointment?</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed volutpat, lorem et sodales suscipit, elit mi convallis lacus, a volutpat eros orci in sem.</p>
+    </div>
+
+    <div id="q8" class="diagnosis-section">
+      <h3>8) How does diagnosis differ for women and girls?</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rhoncus, erat sit amet mattis dictum, augue nulla volutpat magna, nec dapibus risus felis sed mauris.</p>
+    </div>
+
+    <div id="q9" class="diagnosis-section">
+      <h3>9) What happens after receiving a diagnosis?</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque volutpat euismod ipsum, vitae condimentum ligula tincidunt ut. Aliquam erat volutpat.</p>
+    </div>
+
+    <div id="q10" class="diagnosis-section">
+      <h3>10) What if I’m told I don’t meet the criteria?</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam erat volutpat. Vivamus porttitor mattis dolor, ut ullamcorper nulla condimentum et.</p>
+    </div>
   </section>
 
   <!-- ===== FOOTER ===== -->
@@ -83,6 +161,7 @@
 
   <!-- ===== SCRIPT ===== -->
   <script>
+    // Mobile nav toggle
     document.querySelector(".nav-toggle").addEventListener("click", function(){
       document.querySelector(".nav-links").classList.toggle("active");
     });
