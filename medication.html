@@ -2,40 +2,49 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Medication & Alternatives - Mads ADHD</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Medication & Health - Mads ADHD</title>
+
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-  <link rel="stylesheet" href="style.css" />
+
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="style.css?v=6">
 
   <style>
-    .medication-hero {
-      padding: 40px 20px;
-      min-height: 140px;
-    }
-    .medication-hero h1 {
-      font-size: 2.2rem;
-      margin-bottom: 8px;
-    }
-    .medication-content {
-      max-width: 1100px;
-      margin: 40px auto;
-      padding: 0 20px;
-      line-height: 1.7;
-    }
-    .medication-content h2 {
-      margin-top: 30px;
-      margin-bottom: 12px;
+    /* Local tweaks specific to Medication page */
+    .medication-list a {
       color: var(--coral);
+      text-decoration: none;
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 500;
     }
-    .medication-content p {
-      margin-bottom: 16px;
+    .medication-list a:hover {
+      text-decoration: underline;
+    }
+    .medication-section {
+      margin-top: 40px;
+      border-top: 1px solid #eee;
+      padding-top: 20px;
+    }
+    .medication-section h3 {
+      color: var(--coral);
+      margin-bottom: 10px;
+    }
+    .medication-section p {
+      color: var(--ink);
+      line-height: 1.6;
     }
   </style>
 </head>
-<body>
 
-  <!-- HEADER -->
+<body class="medication-page">
+
+  <!-- ===== Header ===== -->
   <header class="site-header">
     <div class="logo-centered">
       <a href="index.html">
@@ -44,95 +53,118 @@
     </div>
   </header>
 
-  <!-- NAVIGATION BAR -->
+  <!-- ===== NAVIGATION ===== -->
   <nav class="main-nav">
     <button class="nav-toggle" aria-label="Toggle navigation">
       <i class="fa-solid fa-bars"></i>
     </button>
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
-      <li class="dropdown">
-        <a href="#" class="dropdown-toggle">
-          Information and Support <i class="fa-solid fa-caret-down arrow"></i>
-        </a>
-        <ul class="dropdown-menu">
-          <li><a href="living.html">Living with ADHD</a></li>
-          <li><a href="parents.html">Parents & Families</a></li>
-          <li><a href="workplace.html">Workplace & Career</a></li>
-          <li><a href="health.html">Health & Hormones</a></li>
-          <li><a href="medication.html">Medication & Alternatives</a></li>
-          <li><a href="positives.html">Positives of ADHD</a></li>
-          <li><a href="advocacy.html">Advocacy & Confidence</a></li>
-          <li><a href="challenges.html">Challenges of ADHD</a></li>
-          <li><a href="diagnosis.html">Diagnosis & Undiagnosis</a></li>
-          <li><a href="science.html">The Science</a></li>
-          <li><a href="lovedones.html">Loved Ones</a></li>
-          <li><a href="education.html">Education</a></li>
-        </ul>
-      </li>
+      <li><a href="information_and_support.html">Information & Support</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
   </nav>
 
-  <!-- HERO -->
-  <section class="hero medication-hero">
-    <h1>Medication & Alternatives</h1>
-    <p>Exploring treatment options, from prescribed medication to lifestyle and holistic approaches.</p>
+  <!-- ===== PAGE CONTENT ===== -->
+  <section class="guides-heading" style="max-width:900px; margin:auto; text-align:left; padding:20px;">
+    <a href="information_and_support.html" class="btn btn-primary" style="margin-bottom:20px; display:inline-block;">
+      ← Back
+    </a>
+
+    <h2 style="color:var(--coral); text-align:center; margin-top:10px;">Medication & Health</h2>
+    <p style="text-align:center; margin-bottom:25px;">
+      Information on ADHD medication, side effects, hormones, and self-care for better wellbeing and balance.
+    </p>
+
+    <p>
+      Medication can be a helpful part of managing ADHD symptoms, but it’s not a one-size-fits-all solution.  
+      Understanding your options, working with healthcare professionals, and learning how lifestyle factors like sleep and hormones affect ADHD can make a huge difference to daily life.
+    </p>
+
+    <ul class="medication-list" style="list-style:none; padding:0; margin-top:25px;">
+      <li><a href="#q1">1) What types of ADHD medication are available?</a></li>
+      <li><a href="#q2">2) How do stimulant and non-stimulant medications differ?</a></li>
+      <li><a href="#q3">3) What side effects should I look out for?</a></li>
+      <li><a href="#q4">4) How long does it take to find the right medication?</a></li>
+      <li><a href="#q5">5) What happens if my medication stops working?</a></li>
+      <li><a href="#q6">6) How do hormones affect ADHD symptoms and medication?</a></li>
+      <li><a href="#q7">7) Are there alternative or natural approaches that help?</a></li>
+      <li><a href="#q8">8) Can ADHD medication impact sleep or appetite?</a></li>
+      <li><a href="#q9">9) How should I talk to my doctor about side effects?</a></li>
+      <li><a href="#q10">10) What if I decide not to take medication?</a></li>
+    </ul>
+
+    <!-- ===== ANCHORED CONTENT SECTIONS ===== -->
+    <div id="q1" class="medication-section">
+      <h3>1) What types of ADHD medication are available?</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus rhoncus elit vel magna egestas, non tincidunt justo dignissim.</p>
+    </div>
+
+    <div id="q2" class="medication-section">
+      <h3>2) How do stimulant and non-stimulant medications differ?</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dapibus, risus non aliquet cursus, lacus ex tempus nisi, vitae ultrices libero erat nec est.</p>
+    </div>
+
+    <div id="q3" class="medication-section">
+      <h3>3) What side effects should I look out for?</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean bibendum velit at lorem ultricies, vel sodales eros bibendum.</p>
+    </div>
+
+    <div id="q4" class="medication-section">
+      <h3>4) How long does it take to find the right medication?</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce feugiat fermentum neque a imperdiet.</p>
+    </div>
+
+    <div id="q5" class="medication-section">
+      <h3>5) What happens if my medication stops working?</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut luctus eros nec augue laoreet malesuada.</p>
+    </div>
+
+    <div id="q6" class="medication-section">
+      <h3>6) How do hormones affect ADHD symptoms and medication?</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed gravida orci a libero facilisis, non pharetra justo viverra.</p>
+    </div>
+
+    <div id="q7" class="medication-section">
+      <h3>7) Are there alternative or natural approaches that help?</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris dignissim, orci in mattis dictum, elit mi imperdiet risus, et gravida leo nulla ac libero.</p>
+    </div>
+
+    <div id="q8" class="medication-section">
+      <h3>8) Can ADHD medication impact sleep or appetite?</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque dignissim, felis a commodo vestibulum, ex urna dictum libero, nec tempor risus elit nec enim.</p>
+    </div>
+
+    <div id="q9" class="medication-section">
+      <h3>9) How should I talk to my doctor about side effects?</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur at facilisis ipsum, nec ultricies orci.</p>
+    </div>
+
+    <div id="q10" class="medication-section">
+      <h3>10) What if I decide not to take medication?</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum blandit volutpat lacus, at fermentum sapien gravida ut.</p>
+    </div>
   </section>
 
-  <!-- PAGE CONTENT -->
-  <main class="medication-content">
-    <h2>Understanding ADHD Medication</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget accumsan sapien, sed vestibulum urna. Curabitur luctus interdum dolor, vel malesuada est gravida non. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-
-    <h2>Exploring Non-Medication Approaches</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincidunt, neque a sagittis cursus, enim mauris efficitur magna, ac tincidunt turpis nulla sed nunc. Vestibulum volutpat, felis in tincidunt tempor, eros augue volutpat est, in rutrum metus sem a justo.</p>
-
-    <h2>Finding the Right Balance</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi suscipit, magna at aliquet tincidunt, lorem ligula vehicula nulla, ut varius felis justo ac felis. Integer non facilisis magna. Suspendisse potenti. Donec nec erat sed elit hendrerit fringilla non vitae magna.</p>
-  </main>
-
-  <!-- NEWSLETTER SIGNUP -->
-  <section class="newsletter-signup">
-    <h2>Stay in the Loop</h2>
-    <p>Subscribe to our Newsletter for ADHD updates, resources, and community stories.</p>
-    <form class="newsletter-form">
-      <input type="text" placeholder="First name" required>
-      <input type="text" placeholder="Last name" required>
-      <input type="email" placeholder="Email address" required>
-      <button type="submit">Sign up</button>
-    </form>
-  </section>
-
-  <!-- FOOTER -->
+  <!-- ===== FOOTER ===== -->
   <footer class="site-footer">
-    <div class="footer-links">
-      <a href="privacy.html">Privacy Policy</a> | <a href="disclaimer.html">Disclaimer</a>
-    </div>
     <div class="social-icons">
-      <img src="images/instagramicon.png" alt="Instagram" class="social-icon-img">
-      <img src="images/tiktokicon.png" alt="TikTok" class="social-icon-img">
-      <img src="images/youtubeicon.png" alt="YouTube" class="social-icon-img">
+      <a href="#"><img src="images/instagramicon.png" alt="Instagram" class="social-icon-img"></a>
+      <a href="#"><img src="images/tiktokicon.png" alt="TikTok" class="social-icon-img"></a>
+      <a href="#"><img src="images/youtubeicon.png" alt="YouTube" class="social-icon-img"></a>
     </div>
-    <p>&copy; 2025 Mads ADHD. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="privacy.html">Privacy Policy</a> | 
+      <a href="disclaimer.html">Disclaimer</a>
+    </div>
+    <p>© 2025 Mads ADHD. All rights reserved.</p>
   </footer>
 
+  <!-- ===== SCRIPT ===== -->
   <script>
-    // Toggle mobile nav
+    // Mobile nav toggle
     document.querySelector(".nav-toggle").addEventListener("click", function(){
       document.querySelector(".nav-links").classList.toggle("active");
-    });
-
-    // Toggle dropdown on mobile
-    document.querySelectorAll(".dropdown-toggle").forEach(function(dropBtn){
-      dropBtn.addEventListener("click", function(e){
-        if(window.innerWidth <= 768){
-          e.preventDefault();
-          let submenu = this.nextElementSibling;
-          submenu.classList.toggle("active");
-          this.querySelector(".arrow").classList.toggle("rotated");
-        }
-      });
     });
   </script>
 </body>
