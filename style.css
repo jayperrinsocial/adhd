@@ -646,3 +646,14 @@ body.index-page .features {
   transform: translateY(-2px);
 }
 
+/* ===== Responsive Adjustment: Back to Top (Mobile) ===== */
+@media (max-width: 768px) {
+  #backToTop {
+    bottom: 18px;
+    right: 18px;
+    padding: 10px 12px;
+    font-size: 1rem;
+  }
+}
+
+
