@@ -656,4 +656,50 @@ body.index-page .features {
   }
 }
 
+/* ===== Frequently Visited Section ===== */
+.frequently-visited {
+  text-align: center;
+  padding: 40px 20px 25px;
+  background: #fff;
+}
+
+.frequently-visited h2 {
+  color: #000;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 22px;
+}
+
+.frequent-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.frequent-links a {
+  color: var(--coral);
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.frequent-links a:hover {
+  color: #ff867b;
+  transform: scale(1.03);
+}
+
+/* Responsive tweak */
+@media (max-width: 768px) {
+  .frequently-visited {
+    padding: 30px 15px 20px;
+  }
+  .frequently-visited h2 {
+    font-size: 1.5rem;
+  }
+  .frequent-links a {
+    font-size: 1rem;
+  }
+}
 
