@@ -2,40 +2,49 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Education & Learning - Mads ADHD</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Workplace & Career - Mads ADHD</title>
+
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-  <link rel="stylesheet" href="style.css" />
+
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="style.css?v=6">
 
   <style>
-    .education-hero {
-      padding: 40px 20px;
-      min-height: 140px;
-    }
-    .education-hero h1 {
-      font-size: 2.2rem;
-      margin-bottom: 8px;
-    }
-    .education-content {
-      max-width: 1100px;
-      margin: 40px auto;
-      padding: 0 20px;
-      line-height: 1.7;
-    }
-    .education-content h2 {
-      margin-top: 30px;
-      margin-bottom: 12px;
+    /* Local tweaks specific to Workplace page */
+    .workplace-list a {
       color: var(--coral);
+      text-decoration: none;
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 500;
     }
-    .education-content p {
-      margin-bottom: 16px;
+    .workplace-list a:hover {
+      text-decoration: underline;
+    }
+    .workplace-section {
+      margin-top: 40px;
+      border-top: 1px solid #eee;
+      padding-top: 20px;
+    }
+    .workplace-section h3 {
+      color: var(--coral);
+      margin-bottom: 10px;
+    }
+    .workplace-section p {
+      color: var(--ink);
+      line-height: 1.6;
     }
   </style>
 </head>
-<body>
 
-  <!-- HEADER -->
+<body class="workplace-page">
+
+  <!-- ===== Header ===== -->
   <header class="site-header">
     <div class="logo-centered">
       <a href="index.html">
@@ -44,95 +53,118 @@
     </div>
   </header>
 
-  <!-- NAVIGATION BAR -->
+  <!-- ===== NAVIGATION ===== -->
   <nav class="main-nav">
     <button class="nav-toggle" aria-label="Toggle navigation">
       <i class="fa-solid fa-bars"></i>
     </button>
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
-      <li class="dropdown">
-        <a href="#" class="dropdown-toggle">
-          Information and Support <i class="fa-solid fa-caret-down arrow"></i>
-        </a>
-        <ul class="dropdown-menu">
-          <li><a href="living.html">Living with ADHD</a></li>
-          <li><a href="parents.html">Parents & Families</a></li>
-          <li><a href="workplace.html">Workplace & Career</a></li>
-          <li><a href="health.html">Health & Hormones</a></li>
-          <li><a href="medication.html">Medication & Alternatives</a></li>
-          <li><a href="positives.html">Positives of ADHD</a></li>
-          <li><a href="advocacy.html">Advocacy & Confidence</a></li>
-          <li><a href="challenges.html">Challenges of ADHD</a></li>
-          <li><a href="diagnosis.html">Diagnosis & Undiagnosis</a></li>
-          <li><a href="science.html">The Science</a></li>
-          <li><a href="lovedones.html">Loved Ones</a></li>
-          <li><a href="education.html">Education</a></li>
-        </ul>
-      </li>
+      <li><a href="information_and_support.html">Information & Support</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
   </nav>
 
-  <!-- HERO -->
-  <section class="hero education-hero">
-    <h1>Education & Learning</h1>
-    <p>Exploring how ADHD affects learning — and how schools, teachers, and students can work together.</p>
+  <!-- ===== PAGE CONTENT ===== -->
+  <section class="guides-heading" style="max-width:900px; margin:auto; text-align:left; padding:20px;">
+    <a href="information_and_support.html" class="btn btn-primary" style="margin-bottom:20px; display:inline-block;">
+      ← Back
+    </a>
+
+    <h2 style="color:var(--coral); text-align:center; margin-top:10px;">Workplace & Career</h2>
+    <p style="text-align:center; margin-bottom:25px;">
+      Guidance on navigating ADHD in the workplace — understanding your rights, managing focus, and thriving in your career.
+    </p>
+
+    <p>
+      ADHD can affect productivity, communication, and organisation at work, but it also brings unique strengths such as creativity, problem-solving, and high energy.  
+      Knowing your rights, understanding reasonable adjustments, and building strategies can help you perform at your best in any environment.
+    </p>
+
+    <ul class="workplace-list" style="list-style:none; padding:0; margin-top:25px;">
+      <li><a href="#q1">1) What are reasonable adjustments for ADHD at work?</a></li>
+      <li><a href="#q2">2) Should I tell my employer about my ADHD?</a></li>
+      <li><a href="#q3">3) How do I request workplace accommodations?</a></li>
+      <li><a href="#q4">4) What are my rights under the Equality Act?</a></li>
+      <li><a href="#q5">5) How can I manage time and focus at work?</a></li>
+      <li><a href="#q6">6) What support can HR provide for ADHD employees?</a></li>
+      <li><a href="#q7">7) How do I handle workplace misunderstandings or stigma?</a></li>
+      <li><a href="#q8">8) What ADHD-friendly careers or roles might suit me?</a></li>
+      <li><a href="#q9">9) How can managers better support ADHD staff?</a></li>
+      <li><a href="#q10">10) Are there financial or coaching resources available?</a></li>
+    </ul>
+
+    <!-- ===== ANCHORED CONTENT SECTIONS ===== -->
+    <div id="q1" class="workplace-section">
+      <h3>1) What are reasonable adjustments for ADHD at work?</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tincidunt metus at sapien tincidunt, id aliquet lectus bibendum.</p>
+    </div>
+
+    <div id="q2" class="workplace-section">
+      <h3>2) Should I tell my employer about my ADHD?</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sit amet tellus at nisi feugiat vestibulum vel et risus.</p>
+    </div>
+
+    <div id="q3" class="workplace-section">
+      <h3>3) How do I request workplace accommodations?</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Donec vel nibh ut neque interdum consectetur sit amet in augue.</p>
+    </div>
+
+    <div id="q4" class="workplace-section">
+      <h3>4) What are my rights under the Equality Act?</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer a felis eros. Mauris sodales, ligula nec tincidunt tristique, lacus lorem lacinia justo, nec accumsan ligula justo id leo.</p>
+    </div>
+
+    <div id="q5" class="workplace-section">
+      <h3>5) How can I manage time and focus at work?</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at tortor in libero pretium finibus vitae sed elit.</p>
+    </div>
+
+    <div id="q6" class="workplace-section">
+      <h3>6) What support can HR provide for ADHD employees?</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit amet libero sed mauris consequat volutpat.</p>
+    </div>
+
+    <div id="q7" class="workplace-section">
+      <h3>7) How do I handle workplace misunderstandings or stigma?</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aliquam mattis nunc, in sollicitudin libero efficitur ut.</p>
+    </div>
+
+    <div id="q8" class="workplace-section">
+      <h3>8) What ADHD-friendly careers or roles might suit me?</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque posuere lacinia arcu, nec tempor arcu feugiat non.</p>
+    </div>
+
+    <div id="q9" class="workplace-section">
+      <h3>9) How can managers better support ADHD staff?</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit ipsum sed lacus hendrerit viverra.</p>
+    </div>
+
+    <div id="q10" class="workplace-section">
+      <h3>10) Are there financial or coaching resources available?</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac nibh at turpis consequat commodo.</p>
+    </div>
   </section>
 
-  <!-- PAGE CONTENT -->
-  <main class="education-content">
-    <h2>ADHD in the Classroom</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget accumsan sapien, sed vestibulum urna. Curabitur luctus interdum dolor, vel malesuada est gravida non. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.</p>
-
-    <h2>Supporting Students with ADHD</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincidunt, neque a sagittis cursus, enim mauris efficitur magna, ac tincidunt turpis nulla sed nunc. Vestibulum volutpat, felis in tincidunt tempor, eros augue volutpat est, in rutrum metus sem a justo.</p>
-
-    <h2>Encouraging a Love of Learning</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi suscipit, magna at aliquet tincidunt, lorem ligula vehicula nulla, ut varius felis justo ac felis. Integer non facilisis magna. Suspendisse potenti. Donec nec erat sed elit hendrerit fringilla non vitae magna.</p>
-  </main>
-
-  <!-- NEWSLETTER SIGNUP -->
-  <section class="newsletter-signup">
-    <h2>Stay in the Loop</h2>
-    <p>Subscribe to our Newsletter for ADHD updates, resources, and community stories.</p>
-    <form class="newsletter-form">
-      <input type="text" placeholder="First name" required>
-      <input type="text" placeholder="Last name" required>
-      <input type="email" placeholder="Email address" required>
-      <button type="submit">Sign up</button>
-    </form>
-  </section>
-
-  <!-- FOOTER -->
+  <!-- ===== FOOTER ===== -->
   <footer class="site-footer">
-    <div class="footer-links">
-      <a href="privacy.html">Privacy Policy</a> | <a href="disclaimer.html">Disclaimer</a>
-    </div>
     <div class="social-icons">
-      <img src="images/instagramicon.png" alt="Instagram" class="social-icon-img">
-      <img src="images/tiktokicon.png" alt="TikTok" class="social-icon-img">
-      <img src="images/youtubeicon.png" alt="YouTube" class="social-icon-img">
+      <a href="#"><img src="images/instagramicon.png" alt="Instagram" class="social-icon-img"></a>
+      <a href="#"><img src="images/tiktokicon.png" alt="TikTok" class="social-icon-img"></a>
+      <a href="#"><img src="images/youtubeicon.png" alt="YouTube" class="social-icon-img"></a>
     </div>
-    <p>&copy; 2025 Mads ADHD. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="privacy.html">Privacy Policy</a> | 
+      <a href="disclaimer.html">Disclaimer</a>
+    </div>
+    <p>© 2025 Mads ADHD. All rights reserved.</p>
   </footer>
 
+  <!-- ===== SCRIPT ===== -->
   <script>
-    // Toggle mobile nav
+    // Mobile nav toggle
     document.querySelector(".nav-toggle").addEventListener("click", function(){
       document.querySelector(".nav-links").classList.toggle("active");
-    });
-
-    // Toggle dropdown on mobile
-    document.querySelectorAll(".dropdown-toggle").forEach(function(dropBtn){
-      dropBtn.addEventListener("click", function(e){
-        if(window.innerWidth <= 768){
-          e.preventDefault();
-          let submenu = this.nextElementSibling;
-          submenu.classList.toggle("active");
-          this.querySelector(".arrow").classList.toggle("rotated");
-        }
-      });
     });
   </script>
 </body>
