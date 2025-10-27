@@ -707,3 +707,12 @@ body.index-page .features {
   }
 }
 
+/* Reduce gap above Frequently Visited section */
+.features {
+  margin-bottom: 25px; /* was likely larger by default */
+}
+
+.frequently-visited {
+  padding-top: 20px; /* was 40px */
+}
+
