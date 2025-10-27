@@ -2,40 +2,49 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Advocacy & Confidence - Mads ADHD</title>
+
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-  <link rel="stylesheet" href="style.css" />
+
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="style.css?v=6">
 
   <style>
-    .advocacy-hero {
-      padding: 40px 20px;
-      min-height: 140px;
-    }
-    .advocacy-hero h1 {
-      font-size: 2.2rem;
-      margin-bottom: 8px;
-    }
-    .advocacy-content {
-      max-width: 1100px;
-      margin: 40px auto;
-      padding: 0 20px;
-      line-height: 1.7;
-    }
-    .advocacy-content h2 {
-      margin-top: 30px;
-      margin-bottom: 12px;
+    /* Local tweaks specific to Advocacy page */
+    .advocacy-list a {
       color: var(--coral);
+      text-decoration: none;
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 500;
     }
-    .advocacy-content p {
-      margin-bottom: 16px;
+    .advocacy-list a:hover {
+      text-decoration: underline;
+    }
+    .advocacy-section {
+      margin-top: 40px;
+      border-top: 1px solid #eee;
+      padding-top: 20px;
+    }
+    .advocacy-section h3 {
+      color: var(--coral);
+      margin-bottom: 10px;
+    }
+    .advocacy-section p {
+      color: var(--ink);
+      line-height: 1.6;
     }
   </style>
 </head>
-<body>
 
-  <!-- HEADER -->
+<body class="advocacy-page">
+
+  <!-- ===== Header ===== -->
   <header class="site-header">
     <div class="logo-centered">
       <a href="index.html">
@@ -44,95 +53,118 @@
     </div>
   </header>
 
-  <!-- NAVIGATION BAR -->
+  <!-- ===== NAVIGATION ===== -->
   <nav class="main-nav">
     <button class="nav-toggle" aria-label="Toggle navigation">
       <i class="fa-solid fa-bars"></i>
     </button>
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
-      <li class="dropdown">
-        <a href="#" class="dropdown-toggle">
-          Information and Support <i class="fa-solid fa-caret-down arrow"></i>
-        </a>
-        <ul class="dropdown-menu">
-          <li><a href="living.html">Living with ADHD</a></li>
-          <li><a href="parents.html">Parents & Families</a></li>
-          <li><a href="workplace.html">Workplace & Career</a></li>
-          <li><a href="health.html">Health & Hormones</a></li>
-          <li><a href="medication.html">Medication & Alternatives</a></li>
-          <li><a href="positives.html">Positives of ADHD</a></li>
-          <li><a href="advocacy.html">Advocacy & Confidence</a></li>
-          <li><a href="challenges.html">Challenges of ADHD</a></li>
-          <li><a href="diagnosis.html">Diagnosis & Undiagnosis</a></li>
-          <li><a href="science.html">The Science</a></li>
-          <li><a href="lovedones.html">Loved Ones</a></li>
-          <li><a href="education.html">Education</a></li>
-        </ul>
-      </li>
+      <li><a href="information_and_support.html">Information & Support</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
   </nav>
 
-  <!-- HERO -->
-  <section class="hero advocacy-hero">
-    <h1>Advocacy & Confidence</h1>
-    <p>Empowering yourself and others to speak up, seek support, and embrace ADHD with confidence.</p>
+  <!-- ===== PAGE CONTENT ===== -->
+  <section class="guides-heading" style="max-width:900px; margin:auto; text-align:left; padding:20px;">
+    <a href="information_and_support.html" class="btn btn-primary" style="margin-bottom:20px; display:inline-block;">
+      ← Back
+    </a>
+
+    <h2 style="color:var(--coral); text-align:center; margin-top:10px;">Advocacy & Confidence</h2>
+    <p style="text-align:center; margin-bottom:25px;">
+      Empowering yourself and others through understanding, self-belief, and effective communication.
+    </p>
+
+    <p>
+      Advocacy is about more than speaking up — it’s about understanding your rights, knowing your worth, and helping others do the same.  
+      Building confidence and learning how to express needs clearly can transform how ADHD is perceived and supported at every level.
+    </p>
+
+    <ul class="advocacy-list" style="list-style:none; padding:0; margin-top:25px;">
+      <li><a href="#q1">1) What does self-advocacy mean for ADHD?</a></li>
+      <li><a href="#q2">2) How can I communicate my needs effectively?</a></li>
+      <li><a href="#q3">3) What rights do I have at school or work?</a></li>
+      <li><a href="#q4">4) How can I build confidence after a late diagnosis?</a></li>
+      <li><a href="#q5">5) How do I explain ADHD to others who don’t understand?</a></li>
+      <li><a href="#q6">6) What are the best ways to support others with ADHD?</a></li>
+      <li><a href="#q7">7) How can I overcome internalised stigma or shame?</a></li>
+      <li><a href="#q8">8) What role does self-compassion play in confidence?</a></li>
+      <li><a href="#q9">9) How can I become an ADHD advocate in my community?</a></li>
+      <li><a href="#q10">10) How can confidence impact ADHD management?</a></li>
+    </ul>
+
+    <!-- ===== ANCHORED CONTENT SECTIONS ===== -->
+    <div id="q1" class="advocacy-section">
+      <h3>1) What does self-advocacy mean for ADHD?</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non justo eu sapien ultricies dictum.</p>
+    </div>
+
+    <div id="q2" class="advocacy-section">
+      <h3>2) How can I communicate my needs effectively?</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vulputate sapien ut orci porttitor, sit amet gravida nisl tincidunt.</p>
+    </div>
+
+    <div id="q3" class="advocacy-section">
+      <h3>3) What rights do I have at school or work?</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nec odio condimentum, efficitur turpis ac, sodales massa.</p>
+    </div>
+
+    <div id="q4" class="advocacy-section">
+      <h3>4) How can I build confidence after a late diagnosis?</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut fermentum erat id lorem porta rhoncus.</p>
+    </div>
+
+    <div id="q5" class="advocacy-section">
+      <h3>5) How do I explain ADHD to others who don’t understand?</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras bibendum eros in nibh cursus, nec finibus odio ultricies.</p>
+    </div>
+
+    <div id="q6" class="advocacy-section">
+      <h3>6) What are the best ways to support others with ADHD?</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse volutpat tortor vel justo posuere, vel fermentum erat tristique.</p>
+    </div>
+
+    <div id="q7" class="advocacy-section">
+      <h3>7) How can I overcome internalised stigma or shame?</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sit amet augue ac nunc rhoncus luctus ut eget odio.</p>
+    </div>
+
+    <div id="q8" class="advocacy-section">
+      <h3>8) What role does self-compassion play in confidence?</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean malesuada felis non nisl commodo, nec blandit mi tristique.</p>
+    </div>
+
+    <div id="q9" class="advocacy-section">
+      <h3>9) How can I become an ADHD advocate in my community?</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ultricies, augue sit amet mattis congue, metus mi mattis libero, in malesuada orci sem nec est.</p>
+    </div>
+
+    <div id="q10" class="advocacy-section">
+      <h3>10) How can confidence impact ADHD management?</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac felis sit amet tortor convallis convallis.</p>
+    </div>
   </section>
 
-  <!-- PAGE CONTENT -->
-  <main class="advocacy-content">
-    <h2>Understanding Self-Advocacy</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget accumsan sapien, sed vestibulum urna. Curabitur luctus interdum dolor, vel malesuada est gravida non. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.</p>
-
-    <h2>Building Confidence and Resilience</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincidunt, neque a sagittis cursus, enim mauris efficitur magna, ac tincidunt turpis nulla sed nunc. Vestibulum volutpat, felis in tincidunt tempor, eros augue volutpat est, in rutrum metus sem a justo.</p>
-
-    <h2>Becoming an Advocate for Others</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi suscipit, magna at aliquet tincidunt, lorem ligula vehicula nulla, ut varius felis justo ac felis. Integer non facilisis magna. Suspendisse potenti. Donec nec erat sed elit hendrerit fringilla non vitae magna.</p>
-  </main>
-
-  <!-- NEWSLETTER SIGNUP -->
-  <section class="newsletter-signup">
-    <h2>Stay in the Loop</h2>
-    <p>Subscribe to our Newsletter for ADHD updates, resources, and community stories.</p>
-    <form class="newsletter-form">
-      <input type="text" placeholder="First name" required>
-      <input type="text" placeholder="Last name" required>
-      <input type="email" placeholder="Email address" required>
-      <button type="submit">Sign up</button>
-    </form>
-  </section>
-
-  <!-- FOOTER -->
+  <!-- ===== FOOTER ===== -->
   <footer class="site-footer">
-    <div class="footer-links">
-      <a href="privacy.html">Privacy Policy</a> | <a href="disclaimer.html">Disclaimer</a>
-    </div>
     <div class="social-icons">
-      <img src="images/instagramicon.png" alt="Instagram" class="social-icon-img">
-      <img src="images/tiktokicon.png" alt="TikTok" class="social-icon-img">
-      <img src="images/youtubeicon.png" alt="YouTube" class="social-icon-img">
+      <a href="#"><img src="images/instagramicon.png" alt="Instagram" class="social-icon-img"></a>
+      <a href="#"><img src="images/tiktokicon.png" alt="TikTok" class="social-icon-img"></a>
+      <a href="#"><img src="images/youtubeicon.png" alt="YouTube" class="social-icon-img"></a>
     </div>
-    <p>&copy; 2025 Mads ADHD. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="privacy.html">Privacy Policy</a> | 
+      <a href="disclaimer.html">Disclaimer</a>
+    </div>
+    <p>© 2025 Mads ADHD. All rights reserved.</p>
   </footer>
 
+  <!-- ===== SCRIPT ===== -->
   <script>
-    // Toggle mobile nav
+    // Mobile nav toggle
     document.querySelector(".nav-toggle").addEventListener("click", function(){
       document.querySelector(".nav-links").classList.toggle("active");
-    });
-
-    // Toggle dropdown on mobile
-    document.querySelectorAll(".dropdown-toggle").forEach(function(dropBtn){
-      dropBtn.addEventListener("click", function(e){
-        if(window.innerWidth <= 768){
-          e.preventDefault();
-          let submenu = this.nextElementSibling;
-          submenu.classList.toggle("active");
-          this.querySelector(".arrow").classList.toggle("rotated");
-        }
-      });
     });
   </script>
 </body>
