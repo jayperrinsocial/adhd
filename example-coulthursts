@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en-US" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <title>Thank You – Next Steps | Coulthursts</title>
+  <meta name="description" content="Thanks for completing your Post-Concussion Symptom Checker. One of our specialist solicitors will be in touch to discuss your symptoms and next steps." />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://coulthursts.co.uk/wp-content/themes/SoBold/css/main.css">
+  <link rel="stylesheet" href="https://coulthursts.co.uk/wp-content/themes/SoBold/legmark.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="page-template page-thankyou continuation-page">
+<header id="masthead" class="site-header">
+  <div class="masthead__background-container">
+    <div class="masthead__background" style="background-image:url('https://coulthursts.co.uk/wp-content/uploads/2021/09/Home-Header-v02.jpg'); filter: brightness(0.7);"></div>
+  </div>
+
+  <div class="container text-center text-white py-5">
+    <h1 class="hero__title mb-3">Thanks for Completing Your Symptom Check</h1>
+    <p class="lead mx-auto" style="max-width: 700px;">
+      Your responses suggest you may have symptoms worth discussing with our specialist team.
+      Please tell us a few details below so we can get in touch to help you explore your next steps.
+    </p>
+  </div>
+</header>
+
+<main id="content" class="site-content">
+  <section class="py-5">
+    <div class="container">
+      <div class="row justify-content-md-center">
+        <div class="col-md-8">
+          <div class="card shadow-sm p-4">
+            <h2 class="h4 mb-3 text-center text-primary">Tell Us a Bit More About You</h2>
+            <p class="text-center mb-4 text-muted">Complete the short form below and one of our solicitors will be in touch within 24 hours.</p>
+
+            <!-- Embed existing Gravity Form -->
+            <div class='gform_wrapper gravity-theme' id='gform_wrapper_1'>
+              <form method='post' enctype='multipart/form-data' id='gform_1' action='/contact-us/' novalidate>
+                <div class='gform-body'>
+                  <div class='gform_fields'>
+                    <div class='form-group'>
+                      <label for='input_1_3'>First Name <span class="text-danger">*</span></label>
+                      <input type='text' id='input_1_3' name='input_3' class='form-control' required>
+                    </div>
+                    <div class='form-group'>
+                      <label for='input_1_5'>Last Name <span class="text-danger">*</span></label>
+                      <input type='text' id='input_1_5' name='input_5' class='form-control' required>
+                    </div>
+                    <div class='form-group'>
+                      <label for='input_1_7'>Email <span class="text-danger">*</span></label>
+                      <input type='email' id='input_1_7' name='input_7' class='form-control' required>
+                    </div>
+                    <div class='form-group'>
+                      <label for='input_1_6'>Phone Number <span class="text-danger">*</span></label>
+                      <input type='tel' id='input_1_6' name='input_6' class='form-control' required>
+                    </div>
+                    <div class='form-group'>
+                      <label for='input_1_8'>Briefly describe your symptoms or injury <span class="text-danger">*</span></label>
+                      <textarea id='input_1_8' name='input_8' class='form-control' rows='5' required></textarea>
+                    </div>
+                    <div class='form-group form-check'>
+                      <input type='checkbox' id='input_1_9_1' name='input_9.1' class='form-check-input' required>
+                      <label for='input_1_9_1' class='form-check-label'>
+                        I consent to my data being processed according to the <a href="/privacy-policy/" target="_blank">Privacy Policy</a>.
+                      </label>
+                    </div>
+                    <button type='submit' class='btn btn-primary btn-block py-2'>Send My Details</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+
+            <div class="text-center mt-4">
+              <p class="small text-muted">Your information is secure and will never be shared. This assessment is not a diagnosis — it’s a way to help us understand your situation better.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row justify-content-center mt-5 text-center">
+        <div class="col-md-8">
+          <h3 class="h5 mb-2">What Happens Next?</h3>
+          <p class="text-muted mb-0">
+            One of our expert solicitors will review your responses and contact you — usually within 24 hours — to talk through your situation
+            and explain your options for support, treatment, and potential claims.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="text-center py-4 bg-light mt-5">
+  <p class="small text-muted mb-0">© 2025 Coulthursts | Brain Injury Lawyers | Registered in England & Wales</p>
+</footer>
+
+</body>
+</html>
