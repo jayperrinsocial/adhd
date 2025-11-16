@@ -315,6 +315,26 @@ body.homepage .video-news {
 }
 .btn-news:hover {opacity: 0.9;}
 
+/* Home page news thumbnails */
+.video-news .news-item {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.news-thumb-small {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+
+.news-text {
+  flex: 1;
+}
+
+
 /* ===== Newsletter Section ===== */
 .newsletter-signup {
   background: url("images/newsletter-bg.png") no-repeat center top;
@@ -605,6 +625,16 @@ body.homepage .newsletter-signup::before {
 
   .feature-card p {
     font-size: 0.9rem;
+  }
+}
+@media (max-width: 768px) {
+  .video-news .news-item {
+    align-items: center;
+  }
+
+  .news-thumb-small {
+    width: 80px;
+    height: 80px;
   }
 }
 
