@@ -407,3 +407,8 @@ body.index-page .features {
   text-decoration-thickness:2px;
   text-underline-offset:3px;
 }
+
+.news-panel .btn-news {
+  margin-bottom: 30px;  /* adds space below button */
+}
+
