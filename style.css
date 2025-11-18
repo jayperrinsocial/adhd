@@ -440,4 +440,23 @@ body.index-page .features {
   }
 }
 
+/* Reduce gap between news items and the button */
+.video-news .news-panel .news-item {
+  margin-bottom: 15px;      /* was 25–30px */
+  padding-bottom: 12px;     /* was 20–40px */
+}
+
+/* Reduce faint separator line spacing */
+.video-news .news-panel .news-item:last-child {
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+/* Pull the Read More button closer upward */
+.news-panel .btn-news {
+  margin-top: 10px;         /* was ~20px */
+  margin-bottom: 20px;      /* was 30–40px */
+}
+
+
 
